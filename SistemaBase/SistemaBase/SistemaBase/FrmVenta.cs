@@ -294,6 +294,7 @@ namespace SistemaBase
             DateTime Fecha = daFecha.Value;
             cVenta venta = new Clases.cVenta();
             Double Total = 0;
+            Double Entrega = 0;
             Double Ganancia = 0;
             Ganancia = CalcularGanancia();
             if(txtTotal.Text !="")
@@ -301,6 +302,18 @@ namespace SistemaBase
                 Total = fun.ToDouble (txtTotal.Text);
                 
             }
+               
+            if (txtEbtrega.Text != "")
+            {
+                Entrega  = fun.ToDouble(txtEbtrega.Text);
+            }
+
+            if (Entrega > Total)
+            {
+                MessageBox.Show("La entrega no puede superar al total ");
+                return;
+            }
+
             try
             {
                 if (chkCliente.Checked == true)
@@ -577,6 +590,20 @@ namespace SistemaBase
         {
             cVenta venta = new Clases.cVenta();
            // DataTable trdo = venta.GetVentaxCodigo ()
+        }
+
+        private void txtEbtrega_Leave(object sender, EventArgs e)
+        {
+            cFunciones fun = new Clases.cFunciones();
+            Double Total = 0;
+            Double Entrega = 0;
+            Double Saldo = 0;
+            Total = fun.ToDouble(txtTotal.Text);
+            Entrega = fun.ToDouble(txtEbtrega.Text);
+            Saldo = Total - Entrega;
+            txtSaldo.Text = Saldo.ToString();
+            txtSaldo.Text = fun.SepararDecimales(Saldo.ToString());
+            txtEbtrega.Text = fun.SepararDecimales(Entrega.ToString());
         }
     }
 }

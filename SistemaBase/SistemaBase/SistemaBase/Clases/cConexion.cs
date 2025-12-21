@@ -11,11 +11,11 @@ namespace SistemaBase.Clases
         public static string GetConexion()
         {
             //SISTEMA PERFUMES DESKTOP-TRC4UMG
-            string cadena = "Data Source=DESKTOP-TRC4UMG;Initial Catalog=SISTEMA;Integrated Security=True;TrustServerCertificate=True;";
+           // string cadena = "Data Source=DESKTOP-TRC4UMG;Initial Catalog=SISTEMA;Integrated Security=True;TrustServerCertificate=True;";
           
 
             //nueva cadena de conexion   
-           //   string cadena = "Data Source=DESKTOP-PICJCLR\\SQLEXPRESS;Initial Catalog=COMERCIO;Integrated Security=True";
+              string cadena = "Data Source=DESKTOP-PICJCLR\\SQLEXPRESS;Initial Catalog=COMERCIO;Integrated Security=True";
           
             return cadena;
         }

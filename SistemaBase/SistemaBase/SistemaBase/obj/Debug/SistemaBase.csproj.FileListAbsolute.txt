@@ -57,3 +57,29 @@ D:\PROGRAMACION\COMERCIO\Comer\SistemaBase\SistemaBase\SistemaBase\obj\Debug\Sis
 D:\PROGRAMACION\COMERCIO\Comer\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmBuscadorCliente.resources
 D:\PROGRAMACION\COMERCIO\Comer\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmAbmMarca.resources
 D:\PROGRAMACION\COMERCIO\Comer\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmAbmCliente.resources
+D:\PROGRAMACION 3\PERFUMES\PERFUMESS\SistemaBase\SistemaBase\SistemaBase\bin\Debug\SistemaBase.exe.config
+D:\PROGRAMACION 3\PERFUMES\PERFUMESS\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.exe
+D:\PROGRAMACION 3\PERFUMES\PERFUMESS\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.pdb
+D:\PROGRAMACION 3\PERFUMES\PERFUMESS\SistemaBase\SistemaBase\SistemaBase\bin\Debug\SistemaBase.exe
+D:\PROGRAMACION 3\PERFUMES\PERFUMESS\SistemaBase\SistemaBase\SistemaBase\bin\Debug\SistemaBase.pdb
+D:\PROGRAMACION 3\PERFUMES\PERFUMESS\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.csprojResolveAssemblyReference.cache
+D:\PROGRAMACION 3\PERFUMES\PERFUMESS\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.Form1.resources
+D:\PROGRAMACION 3\PERFUMES\PERFUMESS\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FormBase.resources
+D:\PROGRAMACION 3\PERFUMES\PERFUMESS\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmAbmCliente.resources
+D:\PROGRAMACION 3\PERFUMES\PERFUMESS\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmAbmMarca.resources
+D:\PROGRAMACION 3\PERFUMES\PERFUMESS\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmAbmUsuario.resources
+D:\PROGRAMACION 3\PERFUMES\PERFUMESS\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmActualizarStock.resources
+D:\PROGRAMACION 3\PERFUMES\PERFUMESS\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmAltaBasicacs.resources
+D:\PROGRAMACION 3\PERFUMES\PERFUMESS\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmAmbProducto.resources
+D:\PROGRAMACION 3\PERFUMES\PERFUMESS\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmAnularVenta.resources
+D:\PROGRAMACION 3\PERFUMES\PERFUMESS\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmBuscadorCliente.resources
+D:\PROGRAMACION 3\PERFUMES\PERFUMESS\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmBuscadorGenerico.resources
+D:\PROGRAMACION 3\PERFUMES\PERFUMESS\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmBuscarProductocs.resources
+D:\PROGRAMACION 3\PERFUMES\PERFUMESS\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmImportarExcel.resources
+D:\PROGRAMACION 3\PERFUMES\PERFUMESS\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmListadoVentascs.resources
+D:\PROGRAMACION 3\PERFUMES\PERFUMESS\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmLogin.resources
+D:\PROGRAMACION 3\PERFUMES\PERFUMESS\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmResumen.resources
+D:\PROGRAMACION 3\PERFUMES\PERFUMESS\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmVenta.resources
+D:\PROGRAMACION 3\PERFUMES\PERFUMESS\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.Principal.resources
+D:\PROGRAMACION 3\PERFUMES\PERFUMESS\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.Properties.Resources.resources
+D:\PROGRAMACION 3\PERFUMES\PERFUMESS\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.csproj.GenerateResource.Cache
