@@ -1,0 +1,59 @@
+F:\PROGRAMACION 2\SistemaBase\SistemaBase\SistemaBase\bin\Debug\SistemaBase.exe.config
+F:\PROGRAMACION 2\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.Properties.Resources.resources
+F:\PROGRAMACION 2\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.csproj.GenerateResource.Cache
+F:\PROGRAMACION 2\SistemaBase\SistemaBase\SistemaBase\bin\Debug\SistemaBase.exe
+F:\PROGRAMACION 2\SistemaBase\SistemaBase\SistemaBase\bin\Debug\SistemaBase.pdb
+F:\PROGRAMACION 2\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.exe
+F:\PROGRAMACION 2\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.pdb
+F:\PROGRAMACION 2\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmAltaBasicacs.resources
+F:\PROGRAMACION 2\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.Principal.resources
+F:\PROGRAMACION 2\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FormBase.resources
+F:\PROGRAMACION 2\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmBuscadorGenerico.resources
+F:\PROGRAMACION 2\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmLogin.resources
+F:\PROGRAMACION 2\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmAbmUsuario.resources
+F:\PROGRAMACION 2\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.csprojResolveAssemblyReference.cache
+F:\PROGRAMACION 2\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmImportarExcel.resources
+F:\PROGRAMACION 2\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.Form1.resources
+D:\PROGRAMACION 2\COMERCIO\SistemaBase\SistemaBase\SistemaBase\bin\Debug\SistemaBase.exe.config
+D:\PROGRAMACION 2\COMERCIO\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.exe
+D:\PROGRAMACION 2\COMERCIO\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.pdb
+D:\PROGRAMACION 2\COMERCIO\SistemaBase\SistemaBase\SistemaBase\bin\Debug\SistemaBase.exe
+D:\PROGRAMACION 2\COMERCIO\SistemaBase\SistemaBase\SistemaBase\bin\Debug\SistemaBase.pdb
+D:\PROGRAMACION 2\COMERCIO\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.csprojResolveAssemblyReference.cache
+D:\PROGRAMACION 2\COMERCIO\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.Form1.resources
+D:\PROGRAMACION 2\COMERCIO\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FormBase.resources
+D:\PROGRAMACION 2\COMERCIO\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmAbmUsuario.resources
+D:\PROGRAMACION 2\COMERCIO\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmAltaBasicacs.resources
+D:\PROGRAMACION 2\COMERCIO\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmAmbProducto.resources
+D:\PROGRAMACION 2\COMERCIO\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmBuscadorGenerico.resources
+D:\PROGRAMACION 2\COMERCIO\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmImportarExcel.resources
+D:\PROGRAMACION 2\COMERCIO\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmLogin.resources
+D:\PROGRAMACION 2\COMERCIO\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.Principal.resources
+D:\PROGRAMACION 2\COMERCIO\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.Properties.Resources.resources
+D:\PROGRAMACION 2\COMERCIO\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.csproj.GenerateResource.Cache
+D:\PROGRAMACION\COMERCIO\Comer\SistemaBase\SistemaBase\SistemaBase\bin\Debug\SistemaBase.exe
+D:\PROGRAMACION\COMERCIO\Comer\SistemaBase\SistemaBase\SistemaBase\bin\Debug\SistemaBase.exe.config
+D:\PROGRAMACION\COMERCIO\Comer\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.Form1.resources
+D:\PROGRAMACION\COMERCIO\Comer\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FormBase.resources
+D:\PROGRAMACION\COMERCIO\Comer\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmAbmUsuario.resources
+D:\PROGRAMACION\COMERCIO\Comer\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmActualizarStock.resources
+D:\PROGRAMACION\COMERCIO\Comer\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmAltaBasicacs.resources
+D:\PROGRAMACION\COMERCIO\Comer\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmAmbProducto.resources
+D:\PROGRAMACION\COMERCIO\Comer\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmAnularVenta.resources
+D:\PROGRAMACION\COMERCIO\Comer\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmBuscadorGenerico.resources
+D:\PROGRAMACION\COMERCIO\Comer\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmBuscarProductocs.resources
+D:\PROGRAMACION\COMERCIO\Comer\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmImportarExcel.resources
+D:\PROGRAMACION\COMERCIO\Comer\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmListadoVentascs.resources
+D:\PROGRAMACION\COMERCIO\Comer\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmLogin.resources
+D:\PROGRAMACION\COMERCIO\Comer\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmResumen.resources
+D:\PROGRAMACION\COMERCIO\Comer\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmVenta.resources
+D:\PROGRAMACION\COMERCIO\Comer\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.Principal.resources
+D:\PROGRAMACION\COMERCIO\Comer\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.Properties.Resources.resources
+D:\PROGRAMACION\COMERCIO\Comer\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.csproj.GenerateResource.cache
+D:\PROGRAMACION\COMERCIO\Comer\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.exe
+D:\PROGRAMACION\COMERCIO\Comer\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.pdb
+D:\PROGRAMACION\COMERCIO\Comer\SistemaBase\SistemaBase\SistemaBase\bin\Debug\SistemaBase.pdb
+D:\PROGRAMACION\COMERCIO\Comer\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.csprojResolveAssemblyReference.cache
+D:\PROGRAMACION\COMERCIO\Comer\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmBuscadorCliente.resources
+D:\PROGRAMACION\COMERCIO\Comer\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmAbmMarca.resources
+D:\PROGRAMACION\COMERCIO\Comer\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmAbmCliente.resources

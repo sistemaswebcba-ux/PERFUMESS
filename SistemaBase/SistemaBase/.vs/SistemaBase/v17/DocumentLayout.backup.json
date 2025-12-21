@@ -1,0 +1,219 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\PROGRAMACION\\COMERCIO\\Comer\\SistemaBase\\SistemaBase\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|d:\\programacion\\comercio\\comer\\sistemabase\\sistemabase\\sistemabase\\clases\\cventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|solutionrelative:sistemabase\\clases\\cventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|d:\\programacion\\comercio\\comer\\sistemabase\\sistemabase\\sistemabase\\frmresumen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|solutionrelative:sistemabase\\frmresumen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|d:\\programacion\\comercio\\comer\\sistemabase\\sistemabase\\sistemabase\\frmresumen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|solutionrelative:sistemabase\\frmresumen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|d:\\programacion\\comercio\\comer\\sistemabase\\sistemabase\\sistemabase\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|solutionrelative:sistemabase\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|d:\\programacion\\comercio\\comer\\sistemabase\\sistemabase\\sistemabase\\frmlistadoventascs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|solutionrelative:sistemabase\\frmlistadoventascs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|d:\\programacion\\comercio\\comer\\sistemabase\\sistemabase\\sistemabase\\frmlistadoventascs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|solutionrelative:sistemabase\\frmlistadoventascs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|d:\\programacion\\comercio\\comer\\sistemabase\\sistemabase\\sistemabase\\frmanularventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|solutionrelative:sistemabase\\frmanularventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|d:\\programacion\\comercio\\comer\\sistemabase\\sistemabase\\sistemabase\\frmventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|solutionrelative:sistemabase\\frmventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|d:\\programacion\\comercio\\comer\\sistemabase\\sistemabase\\sistemabase\\frmventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|solutionrelative:sistemabase\\frmventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|d:\\programacion\\comercio\\comer\\sistemabase\\sistemabase\\sistemabase\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|solutionrelative:sistemabase\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|d:\\programacion\\comercio\\comer\\sistemabase\\sistemabase\\sistemabase\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|solutionrelative:sistemabase\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|d:\\programacion\\comercio\\comer\\sistemabase\\sistemabase\\sistemabase\\frmanularventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|solutionrelative:sistemabase\\frmanularventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmResumen.cs",
+              "DocumentMoniker": "D:\\PROGRAMACION\\COMERCIO\\Comer\\SistemaBase\\SistemaBase\\SistemaBase\\FrmResumen.cs",
+              "RelativeDocumentMoniker": "SistemaBase\\FrmResumen.cs",
+              "ToolTip": "D:\\PROGRAMACION\\COMERCIO\\Comer\\SistemaBase\\SistemaBase\\SistemaBase\\FrmResumen.cs",
+              "RelativeToolTip": "SistemaBase\\FrmResumen.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAswBkAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T18:44:13.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmResumen.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\PROGRAMACION\\COMERCIO\\Comer\\SistemaBase\\SistemaBase\\SistemaBase\\FrmResumen.cs",
+              "RelativeDocumentMoniker": "SistemaBase\\FrmResumen.cs",
+              "ToolTip": "D:\\PROGRAMACION\\COMERCIO\\Comer\\SistemaBase\\SistemaBase\\SistemaBase\\FrmResumen.cs [Dise\u00F1o]",
+              "RelativeToolTip": "SistemaBase\\FrmResumen.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T18:44:11.853Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FrmListadoVentascs.cs",
+              "DocumentMoniker": "D:\\PROGRAMACION\\COMERCIO\\Comer\\SistemaBase\\SistemaBase\\SistemaBase\\FrmListadoVentascs.cs",
+              "RelativeDocumentMoniker": "SistemaBase\\FrmListadoVentascs.cs",
+              "ToolTip": "D:\\PROGRAMACION\\COMERCIO\\Comer\\SistemaBase\\SistemaBase\\SistemaBase\\FrmListadoVentascs.cs",
+              "RelativeToolTip": "SistemaBase\\FrmListadoVentascs.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAADwvyYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T17:49:38.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\PROGRAMACION\\COMERCIO\\Comer\\SistemaBase\\SistemaBase\\SistemaBase\\Program.cs",
+              "RelativeDocumentMoniker": "SistemaBase\\Program.cs",
+              "ToolTip": "D:\\PROGRAMACION\\COMERCIO\\Comer\\SistemaBase\\SistemaBase\\SistemaBase\\Program.cs",
+              "RelativeToolTip": "SistemaBase\\Program.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T17:40:14.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "cVenta.cs",
+              "DocumentMoniker": "D:\\PROGRAMACION\\COMERCIO\\Comer\\SistemaBase\\SistemaBase\\SistemaBase\\Clases\\cVenta.cs",
+              "RelativeDocumentMoniker": "SistemaBase\\Clases\\cVenta.cs",
+              "ToolTip": "D:\\PROGRAMACION\\COMERCIO\\Comer\\SistemaBase\\SistemaBase\\SistemaBase\\Clases\\cVenta.cs*",
+              "RelativeToolTip": "SistemaBase\\Clases\\cVenta.cs*",
+              "ViewState": "AgIAADYAAAAAAAAAAAAkwEQAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T18:19:20.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FrmListadoVentascs.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\PROGRAMACION\\COMERCIO\\Comer\\SistemaBase\\SistemaBase\\SistemaBase\\FrmListadoVentascs.cs",
+              "RelativeDocumentMoniker": "SistemaBase\\FrmListadoVentascs.cs",
+              "ToolTip": "D:\\PROGRAMACION\\COMERCIO\\Comer\\SistemaBase\\SistemaBase\\SistemaBase\\FrmListadoVentascs.cs [Dise\u00F1o]",
+              "RelativeToolTip": "SistemaBase\\FrmListadoVentascs.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T17:49:35.137Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Principal.cs",
+              "DocumentMoniker": "D:\\PROGRAMACION\\COMERCIO\\Comer\\SistemaBase\\SistemaBase\\SistemaBase\\Principal.cs",
+              "RelativeDocumentMoniker": "SistemaBase\\Principal.cs",
+              "ToolTip": "D:\\PROGRAMACION\\COMERCIO\\Comer\\SistemaBase\\SistemaBase\\SistemaBase\\Principal.cs",
+              "RelativeToolTip": "SistemaBase\\Principal.cs",
+              "ViewState": "AgIAAG4AAAAAAAAAAADwv3YAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T17:47:51.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FrmVenta.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\PROGRAMACION\\COMERCIO\\Comer\\SistemaBase\\SistemaBase\\SistemaBase\\FrmVenta.cs",
+              "RelativeDocumentMoniker": "SistemaBase\\FrmVenta.cs",
+              "ToolTip": "D:\\PROGRAMACION\\COMERCIO\\Comer\\SistemaBase\\SistemaBase\\SistemaBase\\FrmVenta.cs [Dise\u00F1o]",
+              "RelativeToolTip": "SistemaBase\\FrmVenta.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T17:43:53.489Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FrmAnularVenta.cs",
+              "DocumentMoniker": "D:\\PROGRAMACION\\COMERCIO\\Comer\\SistemaBase\\SistemaBase\\SistemaBase\\FrmAnularVenta.cs",
+              "RelativeDocumentMoniker": "SistemaBase\\FrmAnularVenta.cs",
+              "ToolTip": "D:\\PROGRAMACION\\COMERCIO\\Comer\\SistemaBase\\SistemaBase\\SistemaBase\\FrmAnularVenta.cs",
+              "RelativeToolTip": "SistemaBase\\FrmAnularVenta.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAjwCEAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T17:52:37.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FrmVenta.cs",
+              "DocumentMoniker": "D:\\PROGRAMACION\\COMERCIO\\Comer\\SistemaBase\\SistemaBase\\SistemaBase\\FrmVenta.cs",
+              "RelativeDocumentMoniker": "SistemaBase\\FrmVenta.cs",
+              "ToolTip": "D:\\PROGRAMACION\\COMERCIO\\Comer\\SistemaBase\\SistemaBase\\SistemaBase\\FrmVenta.cs",
+              "RelativeToolTip": "SistemaBase\\FrmVenta.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAUwGQAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T18:09:55.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Principal.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\PROGRAMACION\\COMERCIO\\Comer\\SistemaBase\\SistemaBase\\SistemaBase\\Principal.cs",
+              "RelativeDocumentMoniker": "SistemaBase\\Principal.cs",
+              "ToolTip": "D:\\PROGRAMACION\\COMERCIO\\Comer\\SistemaBase\\SistemaBase\\SistemaBase\\Principal.cs [Dise\u00F1o]",
+              "RelativeToolTip": "SistemaBase\\Principal.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T17:40:24.371Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FrmAnularVenta.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\PROGRAMACION\\COMERCIO\\Comer\\SistemaBase\\SistemaBase\\SistemaBase\\FrmAnularVenta.cs",
+              "RelativeDocumentMoniker": "SistemaBase\\FrmAnularVenta.cs",
+              "ToolTip": "D:\\PROGRAMACION\\COMERCIO\\Comer\\SistemaBase\\SistemaBase\\SistemaBase\\FrmAnularVenta.cs [Dise\u00F1o]",
+              "RelativeToolTip": "SistemaBase\\FrmAnularVenta.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T17:52:17.885Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
