@@ -15,7 +15,7 @@ namespace SistemaBase.Clases
           
 
             //nueva cadena de conexion   
-              string cadena = "Data Source=DESKTOP-PICJCLR\\SQLEXPRESS;Initial Catalog=COMERCIO;Integrated Security=True";
+              string cadena = "Data Source=DESKTOP-PICJCLR\\SQLEXPRESS;Initial Catalog=PERFUMES;Integrated Security=True";
           
             return cadena;
         }

@@ -280,6 +280,13 @@ namespace SistemaBase
                 MessageBox.Show("Debe ingresar una venta para continuar");
                 return;
             }
+
+            if (txtEbtrega.Text =="")
+            {
+                MessageBox.Show("Debe registrar una entrega para continuar");
+                return;
+            }
+
             int CodUsuario =  Principal.CodUsuarioLogueado;
             cFunciones fun = new cFunciones();
             SqlTransaction Transaccion;
@@ -296,6 +303,7 @@ namespace SistemaBase
             Double Total = 0;
             Double Entrega = 0;
             Double Ganancia = 0;
+            Double Saldo = 0;
             Ganancia = CalcularGanancia();
             if(txtTotal.Text !="")
             {
@@ -306,6 +314,11 @@ namespace SistemaBase
             if (txtEbtrega.Text != "")
             {
                 Entrega  = fun.ToDouble(txtEbtrega.Text);
+            }
+             
+            if (txtSaldo.Text != "")
+            {
+                Saldo = fun.ToDouble(txtSaldo.Text);
             }
 
             if (Entrega > Total)
@@ -329,7 +342,7 @@ namespace SistemaBase
                     }
                    
                 }
-                CodVenta = venta.InsertarVenta(con, Transaccion, Total, Fecha, CodUsuario, CodCli , Ganancia);
+                CodVenta = venta.InsertarVenta(con, Transaccion, Total, Fecha, CodUsuario, CodCli , Ganancia, Entrega ,Saldo );
                
                 GrabarDetalle(CodVenta, con, Transaccion);
                 Transaccion.Commit();
@@ -340,6 +353,8 @@ namespace SistemaBase
                 Limpiar();
                 CargarNumeroVenta();
                 txtTotal.Text = "";
+                txtSaldo.Text = "";
+                txtEbtrega.Text = ""; 
                 txtApellido.Text = "";
                 txtNombreCliente.Text = "";
                 txtCodCliente.Text = "";

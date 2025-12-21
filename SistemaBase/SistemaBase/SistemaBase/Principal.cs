@@ -169,5 +169,11 @@ namespace SistemaBase
             FrmAbmCliente frm = new SistemaBase.FrmAbmCliente();
             frm.Show();
         }
+
+        private void contentsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmListadoDeudores frm = new FrmListadoDeudores();
+            frm.Show();
+        }
     }
 }

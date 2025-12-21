@@ -9,10 +9,10 @@ namespace SistemaBase.Clases
 {
     public class cVenta
     {
-        public Int32 InsertarVenta(SqlConnection con, SqlTransaction Transaccion, double Total, DateTime Fecha,int CodUsuario, Int32? CodCli , Double Ganancia)
+        public Int32 InsertarVenta(SqlConnection con, SqlTransaction Transaccion, double Total, DateTime Fecha,int CodUsuario, Int32? CodCli , Double Ganancia , Double Entrega, Double Saldo)
         {
             string sql = "insert into Venta(";
-            sql = sql + "Fecha,CodUsuario,Total, CodCliente, Ganancia)";
+            sql = sql + "Fecha,CodUsuario,Total, CodCliente, Ganancia, Entrega, Saldo)";
             sql = sql + " values (";
             sql = sql + "'" + Fecha.ToShortDateString() + "'";
             sql = sql + "," + CodUsuario.ToString();
@@ -24,8 +24,10 @@ namespace SistemaBase.Clases
             else
             {
                 sql = sql + ",null ";
-            }
+            }   
             sql = sql + "," + Ganancia.ToString().Replace(",", ".");
+            sql = sql + "," + Entrega.ToString().Replace(",", ".");
+            sql = sql + "," + Saldo.ToString().Replace(",", ".");
             sql = sql + ")";
             return cDb.EjecutarEscalarTransaccion(con, Transaccion, sql);
         }
@@ -85,6 +87,17 @@ namespace SistemaBase.Clases
         {
             string sql = "select * from venta ";
             sql = sql + " where CodVenta =" + CodVenta.ToString();
+            return cDb.GetDatatable(sql);
+        }
+
+
+        public DataTable GetDeudores()
+        {
+            string sql = "select v.CodVenta, v.Fecha,";          
+            sql = sql + "(select cli.Nombre + ' ' + cli.Apellido from Cliente cli where cli.CodCliente =v.CodCliente ) as Cliente  ";
+            sql = sql + ", v.Total ,v.Ganancia, v.Entrega,v.Saldo ";
+            sql = sql + " from Venta v ";
+            sql = sql + " order by v.CodVenta desc ";
             return cDb.GetDatatable(sql);
         }
 
