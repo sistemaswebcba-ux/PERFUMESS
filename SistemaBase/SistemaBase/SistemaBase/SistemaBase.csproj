@@ -55,6 +55,7 @@
     <Compile Include="Clases\cDetalleVentacs.cs" />
     <Compile Include="Clases\cFunciones.cs" />
     <Compile Include="Clases\Class1.cs" />
+    <Compile Include="Clases\cPago.cs" />
     <Compile Include="Clases\cProducto.cs" />
     <Compile Include="Clases\cUsuario.cs" />
     <Compile Include="Clases\cVenta.cs" />
@@ -154,6 +155,12 @@
     <Compile Include="FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmRegistrarPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistrarPago.Designer.cs">
+      <DependentUpon>FrmRegistrarPago.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmResumen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -221,6 +228,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistrarPago.resx">
+      <DependentUpon>FrmRegistrarPago.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmResumen.resx">
       <DependentUpon>FrmResumen.cs</DependentUpon>

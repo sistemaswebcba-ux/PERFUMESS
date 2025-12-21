@@ -101,6 +101,15 @@ namespace SistemaBase.Clases
             return cDb.GetDatatable(sql);
         }
 
+        public void ActualizarSaldo(SqlConnection con, SqlTransaction Transaccion,Int32 CodVenta, Double Importe)
+        {
+            string sql = "update Venta ";
+            sql = sql + " set Entrega = Entrega + " + Importe.ToString().Replace(",", ".");
+            sql = sql + ", Saldo = Saldo - " + Importe.ToString().Replace(",", ".");
+            sql = sql + " where CodVenta =" + CodVenta.ToString();
+            cDb.EjecutarNonQueryTransaccion(con, Transaccion, sql);
+        }
+
 
     }
 }

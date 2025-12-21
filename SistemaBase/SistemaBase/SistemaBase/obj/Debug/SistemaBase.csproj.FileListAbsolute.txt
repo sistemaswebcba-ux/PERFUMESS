@@ -84,3 +84,4 @@ D:\PROGRAMACION 3\PERFUMES\PERFUMESS\SistemaBase\SistemaBase\SistemaBase\obj\Deb
 D:\PROGRAMACION 3\PERFUMES\PERFUMESS\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.Properties.Resources.resources
 D:\PROGRAMACION 3\PERFUMES\PERFUMESS\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.csproj.GenerateResource.Cache
 D:\PROGRAMACION 3\PERFUMES\PERFUMESS\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmListadoDeudores.resources
+D:\PROGRAMACION 3\PERFUMES\PERFUMESS\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmRegistrarPago.resources

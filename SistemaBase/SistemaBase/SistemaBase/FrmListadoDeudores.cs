@@ -40,5 +40,24 @@ namespace SistemaBase
             fun.AnchoColumnas(Grilla, "0;15;25;15;15;15;15");
 
         }
+
+        private void btnCobrar_Click(object sender, EventArgs e)
+        {
+            if (Grilla.CurrentRow==null)
+            {
+                MessageBox.Show("Debe seleccionar un elemento");
+                return; 
+            }
+            Int32 CodVenta = Convert.ToInt32(Grilla.CurrentRow.Cells[0].Value);
+            Principal.CodVenta = CodVenta;
+            FrmRegistrarPago frm = new FrmRegistrarPago();
+            frm.FormClosing += new FormClosingEventHandler(form_FormClosing);
+            frm.ShowDialog();
+        }
+
+        private void form_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            BuscarDeudores();
+        }
     }
 }
