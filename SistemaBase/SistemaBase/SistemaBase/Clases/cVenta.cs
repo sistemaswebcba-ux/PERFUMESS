@@ -97,6 +97,7 @@ namespace SistemaBase.Clases
             sql = sql + "(select cli.Nombre + ' ' + cli.Apellido from Cliente cli where cli.CodCliente =v.CodCliente ) as Cliente  ";
             sql = sql + ", v.Total ,v.Ganancia, v.Entrega,v.Saldo ";
             sql = sql + " from Venta v ";
+            sql = sql + " where isnull(v.Saldo,0) > 0 ";
             sql = sql + " order by v.CodVenta desc ";
             return cDb.GetDatatable(sql);
         }
