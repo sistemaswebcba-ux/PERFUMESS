@@ -26,10 +26,18 @@ namespace SistemaBase.Clases
 
         public DataTable GetDetallexCodVenta(int CodVenta)
         {
-            string sql = "select * from DetalleVenta ";
-            sql = sql + " where CodVenta =" + CodVenta.ToString();
+            string sql = "select * from DetalleVenta d, Producto p ";
+            sql = sql + " where  d.CodProducto = p.CodProducto ";
+            sql = sql + " and CodVenta =" + CodVenta.ToString();
             return cDb.GetDatatable(sql);
         }
         
+        public void Anular(SqlConnection con, SqlTransaction Transaccion, Int32 CodVenta)
+        {
+            string sql = "delete from DetalleVenta ";
+            sql = sql + " where CodVetna = " + CodVenta.ToString();
+            cDb.EjecutarNonQueryTransaccion(con, Transaccion, sql);
+        }
+
     }
 }

@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmListadoVentascs));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnAbriVenta = new System.Windows.Forms.Button();
             this.cmbUsuario = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtCantidad = new System.Windows.Forms.TextBox();
@@ -43,7 +44,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.daFechaDesde = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnAbriVenta = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Grilla)).BeginInit();
             this.SuspendLayout();
@@ -71,6 +71,16 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Listado de Ventas";
+            // 
+            // btnAbriVenta
+            // 
+            this.btnAbriVenta.Image = ((System.Drawing.Image)(resources.GetObject("btnAbriVenta.Image")));
+            this.btnAbriVenta.Location = new System.Drawing.Point(713, 26);
+            this.btnAbriVenta.Name = "btnAbriVenta";
+            this.btnAbriVenta.Size = new System.Drawing.Size(40, 28);
+            this.btnAbriVenta.TabIndex = 126;
+            this.btnAbriVenta.UseVisualStyleBackColor = true;
+            this.btnAbriVenta.Click += new System.EventHandler(this.btnAbriVenta_Click);
             // 
             // cmbUsuario
             // 
@@ -185,15 +195,6 @@
             this.label1.Size = new System.Drawing.Size(47, 17);
             this.label1.TabIndex = 113;
             this.label1.Text = "Fecha";
-            // 
-            // btnAbriVenta
-            // 
-            this.btnAbriVenta.Image = ((System.Drawing.Image)(resources.GetObject("btnAbriVenta.Image")));
-            this.btnAbriVenta.Location = new System.Drawing.Point(713, 26);
-            this.btnAbriVenta.Name = "btnAbriVenta";
-            this.btnAbriVenta.Size = new System.Drawing.Size(40, 28);
-            this.btnAbriVenta.TabIndex = 126;
-            this.btnAbriVenta.UseVisualStyleBackColor = true;
             // 
             // FrmListadoVentascs
             // 

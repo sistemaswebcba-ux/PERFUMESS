@@ -61,5 +61,19 @@ namespace SistemaBase
             cFunciones fun = new cFunciones();
             fun.LlenarCombo(cmbUsuario, "Usuario", "Nombre", "CodUsuario");
         }
+
+        private void btnAbriVenta_Click(object sender, EventArgs e)
+        {
+            if (Grilla.CurrentRow ==null)
+            {
+                MessageBox.Show("Debe seleccionar un elemento para continaur");
+                return;
+            }
+
+            Int32 CodVenta = Convert.ToInt32(Grilla.CurrentRow.Cells[0].Value);
+            Principal.CodVenta = CodVenta;
+            FrmVenta frm = new FrmVenta();
+            frm.ShowDialog();
+        }
     }
 }

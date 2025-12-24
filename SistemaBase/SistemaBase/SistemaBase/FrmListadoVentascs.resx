@@ -120,17 +120,17 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnAbriVenta.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAICSURBVFhH7ZQ9SBthHMZPKOISqDioWOoWFTQIDtKhQgc1
-        0YiSGjNoQRRMK/1QK2Lw+7utwaBIK1JKHUQFBwfB1b0OOtghugimVmP2JvfxmH/ygkouvHcYXXoP/HgP
-        7u73f+5TMGLECC9+jxV+TzWOB2iNb7Nd958DVx6U+boEDl05D1PitLNQtcB5jwVnq9P3V+LA9QSnnWaE
-        v1SqFhC91Qi8Nd9iryodJ1YhKfv2TO2Fg72lqoOTQUUPK9MQbhQQcWcj8jr3GncOwq5H+FMraC9w2Vem
-        OigZZx+KYwPEfgvkWWsCYo8Zf+06CuzbMvC73qQZuvp/r0yqwwndBehgup1aibQ+hjRRoTqc0F/gZRrE
-        sXJIPjufhQYu4qAF5GR6fs6bMyAvOiAvN8eJbkveKkifX8TWW/s0IE09AzmZnp+Ltiwo35piA0VPAcSP
-        +QlIQyWQ52xQfnZwoc+WnEzPT/DN09gALciT5VB+tALr3UmhO0ZOpucn2FUE5VOFPpaaoGz2AVuDCVBB
-        cjI9P3r/AzfBSnt88M7MNWvvQU6m5+dy+DnwveVuUBF6BFQmupKT6fkJTduiJ71LKeRken5Cc05gezil
-        kJPp+Ql9jb7Vu76UQk6m5+dkvAb4tZJSyMn0/ATWZ+EfceBovBFHk04c3wE63z/qQGDDq72AESP/UQTh
-        CmLTWSUxVrXLAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAgJJREFUWEftlD1IG2Ecxk8o4hKoOKhY6hYVNAgO0qFCBzXRiJIaM2hBFEwr/VAr
+        YvD7u63BoEgrUkodRAUHB8HVvQ462CG6CKZWY/Ym9/GYf/KCSi68dxhdeg/8eA/u7vd/7lMwYsQIL36P
+        FX5PNY4HaI1vs133nwNXHpT5ugQOXTkPU+K0s1C1wHmPBWer0/dX4sD1BKedZoS/VKoWEL3VCLw132Kv
+        Kh0nViEp+/ZM7YWDvaWqg5NBRQ8r0xBuFBBxZyPyOvcadw7Crkf4UytoL3DZV6Y6KBlnH4pjA8R+C+RZ
+        awJijxl/7ToK7Nsy8LvepBm6+n+vTKrDCd0F6GC6nVqJtD6GNFGhOpzQX+BlGsSxckg+O5+FBi7ioAXk
+        ZHp+zpszIC86IC83x4luS94qSJ9fxNZb+zQgTT0DOZmen4u2LCjfmmIDRU8BxI/5CUhDJZDnbFB+dnCh
+        z5acTM9P8M3T2AAtyJPlUH60AuvdSaE7Rk6m5yfYVQTlU4U+lpqgbPYBW4MJUEFyMj0/ev8DN8FKe3zw
+        zsw1a+9BTqbn53L4OfC95W5QEXoEVCa6kpPp+QlN26InvUsp5GR6fkJzTmB7OKWQk+n5CX2NvtW7vpRC
+        Tqbn52S8Bvi1klLIyfT8BNZn4R9x4Gi8EUeTThzfATrfP+pAYMOrvYARI/9RBOEKYtNZJTFWtcsAAAAA
+        SUVORK5CYII=
 </value>
   </data>
   <data name="btnAnular.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

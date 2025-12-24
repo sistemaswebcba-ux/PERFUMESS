@@ -134,6 +134,7 @@ namespace SistemaBase
 
         private void undoToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Principal.CodVenta = 0;
             FrmVenta frm = new SistemaBase.FrmVenta();
             frm.Show();
         }

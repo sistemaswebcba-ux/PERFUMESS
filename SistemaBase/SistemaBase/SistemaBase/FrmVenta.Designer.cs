@@ -462,6 +462,7 @@
             // 
             // btnBuscarCliente
             // 
+            this.btnBuscarCliente.Enabled = false;
             this.btnBuscarCliente.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarCliente.Image")));
             this.btnBuscarCliente.Location = new System.Drawing.Point(557, 37);
             this.btnBuscarCliente.Name = "btnBuscarCliente";

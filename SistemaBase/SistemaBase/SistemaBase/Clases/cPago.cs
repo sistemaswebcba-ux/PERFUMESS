@@ -29,5 +29,11 @@ namespace SistemaBase.Clases
             
             return cDb.GetDatatable(sql);
         }
+
+        public void AnularPago(SqlConnection con, SqlTransaction Transaccion, Int32 CodVenta)
+        {
+            string sql = "delete pago where CodVenta =" + CodVenta.ToString();
+            cDb.EjecutarNonQueryTransaccion(con, Transaccion, sql);
+        }
     }
 }

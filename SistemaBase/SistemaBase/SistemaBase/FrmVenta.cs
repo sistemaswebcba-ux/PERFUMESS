@@ -193,10 +193,13 @@ namespace SistemaBase
             BuscarUsuario();
             txtApellido.Enabled = false;
             txtNombreCliente.Enabled = false;
-            txtNroDoc.Enabled = false;
-           
+            txtNroDoc.Enabled = false;        
             fun.LlenarCombo(cmbMarca, "Marca", "Nombre", "CodMarca");
-
+            if (Principal.CodVenta !=0)
+            {
+                Int32 CodVenta = Convert.ToInt32(Principal.CodVenta);
+                BuscarVenta(CodVenta);
+            }
         }
 
         private void CargarNumeroVenta()
@@ -450,6 +453,10 @@ namespace SistemaBase
             Limpiar();
             tbDetalle.Clear();
             Grilla.DataSource = tbDetalle;
+            if (Principal.CodVenta!=0)
+            {
+                this.Close();
+            }
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
@@ -537,6 +544,7 @@ namespace SistemaBase
                 txtApellido.Enabled = true;
                 txtNombreCliente.Enabled = true;
                 txtNroDoc.Enabled = true;
+                btnBuscarCliente.Enabled = true;
             }
             else
             {
@@ -547,6 +555,7 @@ namespace SistemaBase
                 txtNombreCliente.Text = "";
                 txtNroDoc.Text = "";
                 txtCodCliente.Text = "";
+                btnBuscarCliente.Enabled = false;
             }
         }
 
@@ -604,7 +613,70 @@ namespace SistemaBase
         private void BuscarVenta (Int32 CodVenta)
         {
             cVenta venta = new Clases.cVenta();
-           // DataTable trdo = venta.GetVentaxCodigo ()
+            DataTable trdo = venta.GetVentaxCodigo(CodVenta);
+            if (trdo.Rows.Count >0)
+            {
+                if (trdo.Rows[0]["CodCliente"].ToString ()!="")
+                {
+                    Int32 CodCliente = Convert.ToInt32(trdo.Rows[0]["CodCliente"].ToString());
+                    cCliente cli = new cCliente();
+                    DataTable tbcli = cli.GetClientexCodigo(CodCliente);
+                    if (tbcli.Rows.Count >0)
+                    {
+                        txtCodCliente.Text = tbcli.Rows[0]["CodCliente"].ToString();
+                        txtNombreCliente.Text = tbcli.Rows[0]["Nombre"].ToString();
+                        txtApellido.Text = tbcli.Rows[0]["Apellido"].ToString();
+                        txtNroDoc.Text = tbcli.Rows[0]["NroDoc"].ToString();
+                    }
+                }
+
+                txtTotal.Text = trdo.Rows[0]["Total"].ToString();
+                txtEbtrega.Text = trdo.Rows[0]["Entrega"].ToString();
+                txtSaldo.Text = trdo.Rows[0]["Saldo"].ToString();
+                txtTotal.Text = fun.SepararDecimales(txtTotal.Text);
+                txtEbtrega.Text = fun.SepararDecimales(txtEbtrega.Text);
+                txtSaldo.Text = fun.SepararDecimales(txtSaldo.Text);
+                CargarDetalleVenta(CodVenta);
+            }
+           
+        }
+
+        private void CargarDetalleVenta(Int32 CodVenta)
+        {
+            tbDetalle.Rows.Clear();
+            cDetalleVentacs det = new Clases.cDetalleVentacs();
+            DataTable trdo = det.GetDetallexCodVenta(CodVenta);
+            string Nombre = "";
+            string Cantidad = "";
+            string Precio = "";
+            string Costo = "";
+            string Subtotal = "";
+            string CodProducto = "";
+            string Val = "";
+            cFunciones fun = new cFunciones();
+            if (trdo.Rows.Count >0)
+            {
+                CodProducto = trdo.Rows[0]["CodProducto"].ToString();
+                Nombre = trdo.Rows[0]["Nombre"].ToString();
+                Cantidad = trdo.Rows[0]["Cantidad"].ToString();
+                Precio = trdo.Rows[0]["Precio"].ToString();
+                Costo = trdo.Rows[0]["Costo"].ToString();
+                Subtotal = trdo.Rows[0]["Subtotal"].ToString();
+                Val = CodProducto + ";" + Nombre;
+                Val = Val + ";" + Cantidad + ";" + Costo + ";" + Precio;
+                Val = Val + ";" + Subtotal;
+                tbDetalle = fun.AgregarFilas(tbDetalle, Val);
+            }
+            tbDetalle = fun.TablaaMiles(tbDetalle, "Sustotal");
+            tbDetalle = fun.TablaaMiles(tbDetalle, "Costo");
+            tbDetalle = fun.TablaaMiles(tbDetalle, "Precio");
+
+            Grilla.DataSource = tbDetalle;
+            fun.AnchoColumnas(Grilla, "0;40;15;15;15;15");
+            btnAgregar.Enabled = false;
+            btnEliminar.Enabled = false;
+            btnGrabar.Enabled = false;
+            
         }
 
         private void txtEbtrega_Leave(object sender, EventArgs e)
@@ -619,6 +691,48 @@ namespace SistemaBase
             txtSaldo.Text = Saldo.ToString();
             txtSaldo.Text = fun.SepararDecimales(Saldo.ToString());
             txtEbtrega.Text = fun.SepararDecimales(Entrega.ToString());
+        }
+
+        private void AnularVenta(Int32 CodVenta)
+        {
+            SqlTransaction Transaccion;
+            SqlConnection con = new SqlConnection(cConexion.GetConexion());
+            Int32 CodProducto = 0;
+            int Cantidad = 0;
+            cProducto producto = new cProducto();
+            cPago pago = new cPago();
+            cDetalleVentacs detalle = new Clases.cDetalleVentacs();
+            DataTable trdo = detalle.GetDetallexCodVenta(CodVenta);
+            if (trdo.Rows.Count > 0)
+            {
+                if (trdo.Rows[0]["CodVenta"].ToString() != "")
+                {
+                    con.Open();
+                    Transaccion = con.BeginTransaction();
+                    try
+                    {
+                        pago.AnularPago(con, Transaccion, CodVenta);
+                        for (int i = 0; i < trdo.Rows.Count; i++)
+                        {
+                            CodProducto = Convert.ToInt32(trdo.Rows[i]["CodProducto"].ToString());
+                            Cantidad = Convert.ToInt32(trdo.Rows[i]["Cantidad"].ToString());
+                            producto.ActualizarStockTransaccionSuma(con, Transaccion, CodProducto, Cantidad);
+                            //falta borrar la venta y etalle
+                        }
+                        Transaccion.Commit();
+                        con.Close();
+                        Mensaje("Venta anulada correctamente");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Hubo un error en el proceso ");
+                        MessageBox.Show(ex.Message.ToString());
+                        Transaccion.Rollback();
+                        con.Close(); ;
+                    }
+
+                }
+            }
         }
     }
 }
