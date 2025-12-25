@@ -128,5 +128,32 @@ namespace SistemaBase
             Botonera(2);
             Grupo.Enabled = true;
         }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            cFunciones fun = new Clases.cFunciones();
+            string msj = "Confirma Eliminar la marca ";
+            var result = MessageBox.Show(msj, "Información",
+                                 MessageBoxButtons.YesNo,
+                                 MessageBoxIcon.Question);
+
+            // If the no button was pressed ...
+            if (result == DialogResult.No)
+            {
+                return;
+            }
+            try
+            {
+                fun.EliminarGenerico("Marca", "CodMarca", txtCodigo.Text);
+                MessageBox.Show("Datos Borrados correctamente");
+                fun.LimpiarGenerico(this);
+                Botonera(1);
+                Grupo.Enabled = false;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se puede eliminar el registro, tien datos asociados");
+            }
+        }
     }
 }

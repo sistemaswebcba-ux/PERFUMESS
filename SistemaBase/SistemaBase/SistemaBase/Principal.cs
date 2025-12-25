@@ -176,5 +176,11 @@ namespace SistemaBase
             FrmListadoDeudores frm = new FrmListadoDeudores();
             frm.Show();
         }
+
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmCopia frm = new FrmCopia();
+            frm.Show();
+        }
     }
 }

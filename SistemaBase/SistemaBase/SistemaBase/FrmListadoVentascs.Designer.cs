@@ -204,7 +204,7 @@
             this.ClientSize = new System.Drawing.Size(793, 522);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmListadoVentascs";
-            this.Text = "FrmListadoVentascs";
+            this.Text = "Listado de Ventas";
             this.Load += new System.EventHandler(this.FrmListadoVentascs_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

@@ -535,8 +535,17 @@ namespace SistemaBase
 
         private void btnAnular_Click(object sender, EventArgs e)
         {
-            // FrmAnularVenta frm = new SistemaBase.FrmAnularVenta();
-            // frm.ShowDialog();
+            cFunciones fun = new Clases.cFunciones();
+            string msj = "Confirma anular la venta ";
+            var result = MessageBox.Show(msj, "Información",
+                                 MessageBoxButtons.YesNo,
+                                 MessageBoxIcon.Question);
+
+            // If the no button was pressed ...
+            if (result == DialogResult.No)
+            {
+                return;
+            }
             AnularVenta(Principal.CodVenta);
         }
 

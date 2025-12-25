@@ -39,9 +39,9 @@
             this.btnIGregarColor = new System.Windows.Forms.ToolStripButton();
             this.btnSalir = new System.Windows.Forms.ToolStripButton();
             this.Grupo = new System.Windows.Forms.GroupBox();
+            this.txt_Nombre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtCodigo = new System.Windows.Forms.TextBox();
-            this.txt_Nombre = new System.Windows.Forms.TextBox();
             this.BarraBotones.SuspendLayout();
             this.Grupo.SuspendLayout();
             this.SuspendLayout();
@@ -95,6 +95,7 @@
             this.btnEliminar.Size = new System.Drawing.Size(36, 36);
             this.btnEliminar.Text = "toolStripButton3";
             this.btnEliminar.ToolTipText = "Eliminar";
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnAceptar
             // 
@@ -158,6 +159,13 @@
             this.Grupo.TabStop = false;
             this.Grupo.Text = "Marca";
             // 
+            // txt_Nombre
+            // 
+            this.txt_Nombre.Location = new System.Drawing.Point(81, 38);
+            this.txt_Nombre.Name = "txt_Nombre";
+            this.txt_Nombre.Size = new System.Drawing.Size(281, 23);
+            this.txt_Nombre.TabIndex = 2;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -176,13 +184,6 @@
             this.txtCodigo.TabIndex = 0;
             this.txtCodigo.Visible = false;
             // 
-            // txt_Nombre
-            // 
-            this.txt_Nombre.Location = new System.Drawing.Point(81, 38);
-            this.txt_Nombre.Name = "txt_Nombre";
-            this.txt_Nombre.Size = new System.Drawing.Size(281, 23);
-            this.txt_Nombre.TabIndex = 2;
-            // 
             // FrmAbmMarca
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -191,7 +192,7 @@
             this.Controls.Add(this.BarraBotones);
             this.Controls.Add(this.Grupo);
             this.Name = "FrmAbmMarca";
-            this.Text = "FrmAbmMarca";
+            this.Text = "Formulario de Marcas";
             this.Load += new System.EventHandler(this.FrmAbmMarca_Load);
             this.BarraBotones.ResumeLayout(false);
             this.BarraBotones.PerformLayout();
