@@ -143,5 +143,44 @@ namespace SistemaBase
             Grupo.Enabled = true;
             fun.LimpiarGenerico(this);
         }
+
+        private void txt_CodigoBarra_TextChanged(object sender, EventArgs e)
+        {
+            cFunciones fun = new cFunciones();
+            string Codigo = txt_CodigoBarra.Text;
+            string Nombre = "";
+            cProducto prod = new cProducto();
+            DataTable trdo = prod.GetProductoxCodBarra(Codigo);
+            if (trdo.Rows.Count > 0)
+            {
+                if (trdo.Rows[0]["CodProducto"].ToString() != "")
+                {    
+                    txtCodigo.Text = trdo.Rows[0]["CodProducto"].ToString();
+                    Nombre = trdo.Rows[0]["Nombre"].ToString();
+                    txt_Nombre.Text = Nombre;
+                    txt_Precio.Text = trdo.Rows[0]["Precio"].ToString();
+                    txt_Costo.Text = trdo.Rows[0]["Costo"].ToString();
+                    //txtCodigo.Text = trdo.Rows[0]["Codigo"].ToString();
+                    txt_Stock.Text = trdo.Rows[0]["stock"].ToString();
+                    if (txt_Precio.Text != "")
+                    {
+                        txt_Precio.Text = fun.SepararDecimales(txt_Precio.Text);
+                        //  txtPrecio.Text = fun.FormatoEnteroMiles(txtPrecio.Text);
+                    }
+
+                    if (txt_Costo.Text != "")
+                    {
+                        txt_Costo.Text = fun.SepararDecimales(txt_Costo.Text);
+                        //  txtPrecio.Text = fun.FormatoEnteroMiles(txtPrecio.Text);
+                    }
+                    
+                    if (trdo.Rows[0]["CodMarca"].ToString() != "")
+                    {
+                        string CodMarca = trdo.Rows[0]["CodMarca"].ToString();
+                        cmb_CodMarca.SelectedValue = CodMarca;
+                    }
+                }
+            }
+        }
     }
 }

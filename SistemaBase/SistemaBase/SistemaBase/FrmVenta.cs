@@ -195,11 +195,14 @@ namespace SistemaBase
             txtNombreCliente.Enabled = false;
             txtNroDoc.Enabled = false;        
             fun.LlenarCombo(cmbMarca, "Marca", "Nombre", "CodMarca");
+            btnAnular.Enabled = false;
             if (Principal.CodVenta !=0)
             {
+                btnAnular.Enabled = true;
                 Int32 CodVenta = Convert.ToInt32(Principal.CodVenta);
                 BuscarVenta(CodVenta);
             }
+            
         }
 
         private void CargarNumeroVenta()
@@ -362,6 +365,10 @@ namespace SistemaBase
                 txtNombreCliente.Text = "";
                 txtCodCliente.Text = "";
                 txtNroDoc.Text = "";
+                if (cmbMarca.SelectedIndex >0)
+                {
+                    cmbMarca.SelectedIndex = 0;
+                }
             }
             catch (Exception ex)
             {
@@ -528,8 +535,9 @@ namespace SistemaBase
 
         private void btnAnular_Click(object sender, EventArgs e)
         {
-            FrmAnularVenta frm = new SistemaBase.FrmAnularVenta();
-            frm.ShowDialog();
+            // FrmAnularVenta frm = new SistemaBase.FrmAnularVenta();
+            // frm.ShowDialog();
+            AnularVenta(Principal.CodVenta);
         }
 
         private void chkCliente_Click(object sender, EventArgs e)
@@ -701,6 +709,7 @@ namespace SistemaBase
             int Cantidad = 0;
             cProducto producto = new cProducto();
             cPago pago = new cPago();
+            cVenta venta = new cVenta();
             cDetalleVentacs detalle = new Clases.cDetalleVentacs();
             DataTable trdo = detalle.GetDetallexCodVenta(CodVenta);
             if (trdo.Rows.Count > 0)
@@ -719,9 +728,12 @@ namespace SistemaBase
                             producto.ActualizarStockTransaccionSuma(con, Transaccion, CodProducto, Cantidad);
                             //falta borrar la venta y etalle
                         }
+                        detalle.Anular(con, Transaccion, CodVenta);
+                        venta.Anular(con, Transaccion, CodVenta);
                         Transaccion.Commit();
                         con.Close();
                         Mensaje("Venta anulada correctamente");
+                        this.Close();
                     }
                     catch (Exception ex)
                     {

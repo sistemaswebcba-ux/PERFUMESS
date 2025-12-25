@@ -223,6 +223,7 @@
             this.txt_CodigoBarra.Name = "txt_CodigoBarra";
             this.txt_CodigoBarra.Size = new System.Drawing.Size(315, 23);
             this.txt_CodigoBarra.TabIndex = 11;
+            this.txt_CodigoBarra.TextChanged += new System.EventHandler(this.txt_CodigoBarra_TextChanged);
             // 
             // label5
             // 

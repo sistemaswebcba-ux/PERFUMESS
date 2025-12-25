@@ -90,7 +90,6 @@ namespace SistemaBase.Clases
             return cDb.GetDatatable(sql);
         }
 
-
         public DataTable GetDeudores()
         {
             string sql = "select v.CodVenta, v.Fecha,";          
@@ -111,6 +110,12 @@ namespace SistemaBase.Clases
             cDb.EjecutarNonQueryTransaccion(con, Transaccion, sql);
         }
 
+        public void Anular (SqlConnection con, SqlTransaction Transaccion, Int32 CodVenta)
+        {
+            string sql = "delete from venta ";
+            sql = sql + " where CodVenta =" + CodVenta.ToString();
+            cDb.EjecutarNonQueryTransaccion(con, Transaccion, sql);
+        }
 
     }
 }

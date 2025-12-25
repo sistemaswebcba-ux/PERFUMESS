@@ -65,7 +65,7 @@
             this.groupBox1.Controls.Add(this.daFechaDesde);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(-9, 18);
+            this.groupBox1.Location = new System.Drawing.Point(-5, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(797, 492);
             this.groupBox1.TabIndex = 1;
@@ -75,7 +75,7 @@
             // btnAbriVenta
             // 
             this.btnAbriVenta.Image = ((System.Drawing.Image)(resources.GetObject("btnAbriVenta.Image")));
-            this.btnAbriVenta.Location = new System.Drawing.Point(713, 26);
+            this.btnAbriVenta.Location = new System.Drawing.Point(667, 24);
             this.btnAbriVenta.Name = "btnAbriVenta";
             this.btnAbriVenta.Size = new System.Drawing.Size(40, 28);
             this.btnAbriVenta.TabIndex = 126;
@@ -137,11 +137,12 @@
             // btnAnular
             // 
             this.btnAnular.Image = ((System.Drawing.Image)(resources.GetObject("btnAnular.Image")));
-            this.btnAnular.Location = new System.Drawing.Point(667, 25);
+            this.btnAnular.Location = new System.Drawing.Point(713, 25);
             this.btnAnular.Name = "btnAnular";
             this.btnAnular.Size = new System.Drawing.Size(40, 28);
             this.btnAnular.TabIndex = 119;
             this.btnAnular.UseVisualStyleBackColor = true;
+            this.btnAnular.Visible = false;
             // 
             // btnBuscar
             // 

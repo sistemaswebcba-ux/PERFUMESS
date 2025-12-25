@@ -38,7 +38,7 @@ namespace SistemaBase
         {
             FrmAmbProducto childForm = new FrmAmbProducto();
             childForm.MdiParent = this;
-            childForm.Text = "Window " + childFormNumber++;
+           // childForm.Text = "Window " + childFormNumber++;
             childForm.Show();
         }
 

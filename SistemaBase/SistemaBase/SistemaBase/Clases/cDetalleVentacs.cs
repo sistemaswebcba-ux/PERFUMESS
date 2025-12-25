@@ -35,7 +35,7 @@ namespace SistemaBase.Clases
         public void Anular(SqlConnection con, SqlTransaction Transaccion, Int32 CodVenta)
         {
             string sql = "delete from DetalleVenta ";
-            sql = sql + " where CodVetna = " + CodVenta.ToString();
+            sql = sql + " where CodVenta = " + CodVenta.ToString();
             cDb.EjecutarNonQueryTransaccion(con, Transaccion, sql);
         }
 

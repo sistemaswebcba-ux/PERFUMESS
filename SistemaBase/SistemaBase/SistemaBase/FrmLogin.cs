@@ -47,6 +47,7 @@ namespace SistemaBase
                 txtContraseña.Text = "";
                 Principal p = new Principal();
                 p.ShowDialog();
+                this.Close();
             }
             else
             {
