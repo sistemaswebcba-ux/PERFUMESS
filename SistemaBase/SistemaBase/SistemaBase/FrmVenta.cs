@@ -525,8 +525,21 @@ namespace SistemaBase
                     }
                     txtCodigo.Text = trdo.Rows[0]["Codigo"].ToString();
                     txtStock.Text = trdo.Rows[0]["stock"].ToString();
+                    txtCosto.Text = trdo.Rows[0]["Costo"].ToString();
+                    if (txtCosto.Text != "")
+                    {
+                        txtCosto.Text = fun.SepararDecimales(txtCosto.Text);
+                        //  txtPrecio.Text = fun.FormatoEnteroMiles(txtPrecio.Text);
+                    }
+
+                    if (trdo.Rows[0]["CodMarca"].ToString() != "")
+                    {
+                        string CodMarca = trdo.Rows[0]["CodMarca"].ToString();
+                        cmbMarca.SelectedValue = CodMarca;
+                    }
+
                     // txtCodigoBarra.Text = trdo.Rows[0]["CodigoBarra"].ToString();
-                    
+
                 }
             }
             if (b == 1)

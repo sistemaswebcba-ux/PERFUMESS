@@ -163,6 +163,7 @@
             // cmbMarca
             // 
             this.cmbMarca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbMarca.Enabled = false;
             this.cmbMarca.FormattingEnabled = true;
             this.cmbMarca.Location = new System.Drawing.Point(441, 54);
             this.cmbMarca.Name = "cmbMarca";
@@ -255,7 +256,7 @@
             // btnBuscar
             // 
             this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
-            this.btnBuscar.Location = new System.Drawing.Point(663, 28);
+            this.btnBuscar.Location = new System.Drawing.Point(668, 28);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(40, 25);
             this.btnBuscar.TabIndex = 104;

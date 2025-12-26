@@ -73,7 +73,13 @@ namespace SistemaBase
             Int32 CodVenta = Convert.ToInt32(Grilla.CurrentRow.Cells[0].Value);
             Principal.CodVenta = CodVenta;
             FrmVenta frm = new FrmVenta();
+            frm.FormClosing += new FormClosingEventHandler(form_FormClosing);
             frm.ShowDialog();
+        }
+
+        private void form_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Buscar();
         }
     }
 }
