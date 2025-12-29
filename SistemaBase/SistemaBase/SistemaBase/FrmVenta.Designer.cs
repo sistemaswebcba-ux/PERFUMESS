@@ -237,7 +237,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(344, 28);
+            this.label13.Location = new System.Drawing.Point(347, 27);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(91, 17);
             this.label13.TabIndex = 108;
@@ -266,6 +266,7 @@
             // 
             // txtNombre
             // 
+            this.txtNombre.Enabled = false;
             this.txtNombre.Location = new System.Drawing.Point(115, 54);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(226, 23);
@@ -369,6 +370,7 @@
             // 
             // txtStock
             // 
+            this.txtStock.Enabled = false;
             this.txtStock.Location = new System.Drawing.Point(115, 83);
             this.txtStock.Name = "txtStock";
             this.txtStock.Size = new System.Drawing.Size(73, 23);
@@ -476,10 +478,12 @@
             // txtCodCliente
             // 
             this.txtCodCliente.BackColor = System.Drawing.Color.Red;
+            this.txtCodCliente.Enabled = false;
             this.txtCodCliente.Location = new System.Drawing.Point(630, 39);
             this.txtCodCliente.Name = "txtCodCliente";
             this.txtCodCliente.Size = new System.Drawing.Size(35, 23);
             this.txtCodCliente.TabIndex = 135;
+            this.txtCodCliente.Visible = false;
             // 
             // txtNombreCliente
             // 

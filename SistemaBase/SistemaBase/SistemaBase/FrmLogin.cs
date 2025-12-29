@@ -25,6 +25,11 @@ namespace SistemaBase
 
         private void btnIngreso_Click(object sender, EventArgs e)
         {
+            Login();
+        }
+
+        private void Login ()
+        {
             if (txtUsuario.Text == "")
             {
                 MessageBox.Show("Ingresar Nombre de Usuario");
@@ -53,6 +58,14 @@ namespace SistemaBase
             {
                 MessageBox.Show("Usuario incorrecto", "Información");
                 return;
+            }
+        }
+
+        private void txtContraseña_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                Login();
             }
         }
     }

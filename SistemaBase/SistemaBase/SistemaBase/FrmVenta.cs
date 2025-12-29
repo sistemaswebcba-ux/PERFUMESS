@@ -59,10 +59,10 @@ namespace SistemaBase
                         cmbMarca.SelectedValue = CodMarca;
                     }
 
-
-                        txtCantidad.Text = "1";
+                    txtCantidad.Text = "1";
                     txtCantidad.Focus();
                     PuedeAgregarCodigoBarra = true;
+                    PuedeAgregarCodigoBarra2 = true;
                 }
             }
         }
@@ -129,6 +129,7 @@ namespace SistemaBase
 
         private void Limpiar()
         {
+            cmbMarca.SelectedIndex = 0;
             txtCodigo.Text = "";
             txtCodProducto.Text = "";
             txtPrecio.Text = "";
@@ -537,6 +538,11 @@ namespace SistemaBase
                         string CodMarca = trdo.Rows[0]["CodMarca"].ToString();
                         cmbMarca.SelectedValue = CodMarca;
                     }
+
+                    txtCantidad.Text = "1";
+                    txtCantidad.Focus();
+                    PuedeAgregarCodigoBarra = true;
+                    PuedeAgregarCodigoBarra2 = true;
 
                     // txtCodigoBarra.Text = trdo.Rows[0]["CodigoBarra"].ToString();
 
