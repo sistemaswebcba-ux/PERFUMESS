@@ -27,9 +27,10 @@ namespace SistemaBase
         private void Buscar()
         {
             Double Total = 0;
+            Double Ganancia = 0;
             cFunciones fun = new cFunciones();
             DateTime FechaDesde = daFechaDesde.Value;
-            DateTime FechaHasta = daFechaDesde.Value;
+            DateTime FechaHasta = daFechaHasta.Value;
             cVenta venta = new Clases.cVenta();
             Int32? CodUsuario = null;
             if (cmbUsuario.SelectedIndex>0)
@@ -38,6 +39,7 @@ namespace SistemaBase
             }
             DataTable trdo = venta.GetVentasxFecha(FechaDesde, FechaHasta, CodUsuario);
             Total = fun.TotalizarColumna(trdo, "Total");
+            Ganancia = fun.TotalizarColumna(trdo, "Ganancia");
             trdo = fun.TablaaMiles(trdo, "Total");
             trdo = fun.TablaaFechas(trdo, "Fecha");
             trdo = fun.TablaaMiles(trdo, "Ganancia");
@@ -45,6 +47,7 @@ namespace SistemaBase
             fun.AnchoColumnas(Grilla, "10;20;25;15;15;15");
             Grilla.Columns[0].HeaderText = "Nro";
             txtTotal.Text = fun.SepararDecimales(Total.ToString());
+            txtGanancia.Text = fun.SepararDecimales(Ganancia.ToString());
             txtCantidad.Text = trdo.Rows.Count.ToString();
            
         }

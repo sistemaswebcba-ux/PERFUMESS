@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmListadoVentascs));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtGanancia = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.btnAbriVenta = new System.Windows.Forms.Button();
             this.cmbUsuario = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -40,7 +42,7 @@
             this.btnAnular = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.Grilla = new System.Windows.Forms.DataGridView();
-            this.aFechaHasta = new System.Windows.Forms.DateTimePicker();
+            this.daFechaHasta = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.daFechaDesde = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
@@ -50,6 +52,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtGanancia);
+            this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.btnAbriVenta);
             this.groupBox1.Controls.Add(this.cmbUsuario);
             this.groupBox1.Controls.Add(this.label5);
@@ -60,7 +64,7 @@
             this.groupBox1.Controls.Add(this.btnAnular);
             this.groupBox1.Controls.Add(this.btnBuscar);
             this.groupBox1.Controls.Add(this.Grilla);
-            this.groupBox1.Controls.Add(this.aFechaHasta);
+            this.groupBox1.Controls.Add(this.daFechaHasta);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.daFechaDesde);
             this.groupBox1.Controls.Add(this.label1);
@@ -71,6 +75,23 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Listado de Ventas";
+            // 
+            // txtGanancia
+            // 
+            this.txtGanancia.Location = new System.Drawing.Point(686, 455);
+            this.txtGanancia.Name = "txtGanancia";
+            this.txtGanancia.ReadOnly = true;
+            this.txtGanancia.Size = new System.Drawing.Size(100, 23);
+            this.txtGanancia.TabIndex = 128;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(611, 455);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(69, 17);
+            this.label6.TabIndex = 127;
+            this.label6.Text = "Ganancia";
             // 
             // btnAbriVenta
             // 
@@ -94,7 +115,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(348, 35);
+            this.label5.Location = new System.Drawing.Point(348, 30);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(57, 17);
             this.label5.TabIndex = 124;
@@ -102,7 +123,7 @@
             // 
             // txtCantidad
             // 
-            this.txtCantidad.Location = new System.Drawing.Point(538, 456);
+            this.txtCantidad.Location = new System.Drawing.Point(353, 455);
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.ReadOnly = true;
             this.txtCantidad.Size = new System.Drawing.Size(100, 23);
@@ -111,7 +132,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(468, 456);
+            this.label4.Location = new System.Drawing.Point(283, 455);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(64, 17);
             this.label4.TabIndex = 122;
@@ -119,7 +140,7 @@
             // 
             // txtTotal
             // 
-            this.txtTotal.Location = new System.Drawing.Point(690, 459);
+            this.txtTotal.Location = new System.Drawing.Point(505, 455);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.ReadOnly = true;
             this.txtTotal.Size = new System.Drawing.Size(100, 23);
@@ -128,7 +149,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(644, 459);
+            this.label3.Location = new System.Drawing.Point(459, 455);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(40, 17);
             this.label3.TabIndex = 120;
@@ -163,13 +184,13 @@
             this.Grilla.Size = new System.Drawing.Size(773, 380);
             this.Grilla.TabIndex = 117;
             // 
-            // aFechaHasta
+            // daFechaHasta
             // 
-            this.aFechaHasta.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.aFechaHasta.Location = new System.Drawing.Point(234, 30);
-            this.aFechaHasta.Name = "aFechaHasta";
-            this.aFechaHasta.Size = new System.Drawing.Size(108, 23);
-            this.aFechaHasta.TabIndex = 116;
+            this.daFechaHasta.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.daFechaHasta.Location = new System.Drawing.Point(234, 30);
+            this.daFechaHasta.Name = "daFechaHasta";
+            this.daFechaHasta.Size = new System.Drawing.Size(108, 23);
+            this.daFechaHasta.TabIndex = 116;
             // 
             // label2
             // 
@@ -219,7 +240,7 @@
         private System.Windows.Forms.Button btnAnular;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.DataGridView Grilla;
-        private System.Windows.Forms.DateTimePicker aFechaHasta;
+        private System.Windows.Forms.DateTimePicker daFechaHasta;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker daFechaDesde;
         private System.Windows.Forms.Label label1;
@@ -230,5 +251,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cmbUsuario;
         private System.Windows.Forms.Button btnAbriVenta;
+        private System.Windows.Forms.TextBox txtGanancia;
+        private System.Windows.Forms.Label label6;
     }
 }

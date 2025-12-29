@@ -50,8 +50,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\cCliente.cs" />
+    <Compile Include="Clases\cCompra.cs" />
     <Compile Include="Clases\cConexion.cs" />
     <Compile Include="Clases\cDb.cs" />
+    <Compile Include="Clases\cDetalleCompra.cs" />
     <Compile Include="Clases\cDetalleVentacs.cs" />
     <Compile Include="Clases\cFunciones.cs" />
     <Compile Include="Clases\Class1.cs" />
@@ -130,6 +132,12 @@
     </Compile>
     <Compile Include="FrmBuscarProductocs.Designer.cs">
       <DependentUpon>FrmBuscarProductocs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCompra.Designer.cs">
+      <DependentUpon>FrmCompra.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmCopia.cs">
       <SubType>Form</SubType>
@@ -222,6 +230,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmBuscarProductocs.resx">
       <DependentUpon>FrmBuscarProductocs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCompra.resx">
+      <DependentUpon>FrmCompra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCopia.resx">
       <DependentUpon>FrmCopia.cs</DependentUpon>

@@ -182,5 +182,11 @@ namespace SistemaBase
             FrmCopia frm = new FrmCopia();
             frm.Show();
         }
+
+        private void registrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmCompra frm = new SistemaBase.FrmCompra();
+            frm.Show();
+        }
     }
 }

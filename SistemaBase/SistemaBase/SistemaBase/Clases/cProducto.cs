@@ -80,6 +80,16 @@ namespace SistemaBase.Clases
             cDb.EjecutarNonQueryTransaccion(con, Transaccion, sql);
         }
 
+        public void ActualizarPrecioTransaccion(SqlConnection con, SqlTransaction Transaccion, int CodProducto, Double Precio, Double Costo)
+        {
+            string sql = "";
+            sql = "update Producto ";
+            sql = sql + " set Precio = " + Precio.ToString().Replace(",", ".");
+            sql = sql + ", Costo =" + "'" + Costo.ToString().Replace(",", ".");
+            sql = sql + " where CodProducto =" + CodProducto.ToString();
+            cDb.EjecutarNonQueryTransaccion(con, Transaccion, sql);
+        }
+
         public void ActualizarStockTransaccionSuma(SqlConnection con, SqlTransaction Transaccion, int CodProducto, int Cantidad)
         {
             string sql = "";

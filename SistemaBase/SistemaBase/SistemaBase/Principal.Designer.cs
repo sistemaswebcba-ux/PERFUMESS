@@ -65,6 +65,8 @@
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.compraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.toolStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -76,6 +78,7 @@
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileMenu,
             this.editMenu,
+            this.compraToolStripMenuItem,
             this.helpMenu,
             this.salirToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
@@ -166,8 +169,8 @@
             // editMenu
             // 
             this.editMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.undoToolStripMenuItem,
             this.redoToolStripMenuItem,
+            this.undoToolStripMenuItem,
             this.toolStripSeparator6,
             this.cutToolStripMenuItem,
             this.copyToolStripMenuItem,
@@ -175,8 +178,8 @@
             this.toolStripSeparator7,
             this.selectAllToolStripMenuItem});
             this.editMenu.Name = "editMenu";
-            this.editMenu.Size = new System.Drawing.Size(74, 23);
-            this.editMenu.Text = "&Acciones";
+            this.editMenu.Size = new System.Drawing.Size(56, 23);
+            this.editMenu.Text = "&Venta";
             // 
             // undoToolStripMenuItem
             // 
@@ -185,7 +188,7 @@
             this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
             this.undoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
             this.undoToolStripMenuItem.Size = new System.Drawing.Size(246, 24);
-            this.undoToolStripMenuItem.Text = "&Ventas";
+            this.undoToolStripMenuItem.Text = "Registrar";
             this.undoToolStripMenuItem.Click += new System.EventHandler(this.undoToolStripMenuItem_Click);
             // 
             // redoToolStripMenuItem
@@ -375,6 +378,21 @@
             this.toolStripStatusLabel.Size = new System.Drawing.Size(39, 17);
             this.toolStripStatusLabel.Text = "Status";
             // 
+            // compraToolStripMenuItem
+            // 
+            this.compraToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.registrarToolStripMenuItem});
+            this.compraToolStripMenuItem.Name = "compraToolStripMenuItem";
+            this.compraToolStripMenuItem.Size = new System.Drawing.Size(70, 23);
+            this.compraToolStripMenuItem.Text = "Compra";
+            // 
+            // registrarToolStripMenuItem
+            // 
+            this.registrarToolStripMenuItem.Name = "registrarToolStripMenuItem";
+            this.registrarToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.registrarToolStripMenuItem.Text = "Registrar";
+            this.registrarToolStripMenuItem.Click += new System.EventHandler(this.registrarToolStripMenuItem_Click);
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -438,6 +456,8 @@
         private System.Windows.Forms.ToolStripMenuItem actualizarStockToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem marcaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clienteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem compraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem registrarToolStripMenuItem;
     }
 }
 
