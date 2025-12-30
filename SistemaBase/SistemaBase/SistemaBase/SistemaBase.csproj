@@ -157,6 +157,12 @@
     <Compile Include="FrmListadoDeudores.Designer.cs">
       <DependentUpon>FrmListadoDeudores.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmListadoStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListadoStock.Designer.cs">
+      <DependentUpon>FrmListadoStock.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmListadoVentascs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -242,6 +248,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmListadoDeudores.resx">
       <DependentUpon>FrmListadoDeudores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListadoStock.resx">
+      <DependentUpon>FrmListadoStock.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmListadoVentascs.resx">
       <DependentUpon>FrmListadoVentascs.cs</DependentUpon>

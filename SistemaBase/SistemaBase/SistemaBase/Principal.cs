@@ -188,5 +188,11 @@ namespace SistemaBase
             FrmCompra frm = new SistemaBase.FrmCompra();
             frm.Show();
         }
+
+        private void productosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmListadoStock frm = new FrmListadoStock();
+            frm.Show();
+        }
     }
 }

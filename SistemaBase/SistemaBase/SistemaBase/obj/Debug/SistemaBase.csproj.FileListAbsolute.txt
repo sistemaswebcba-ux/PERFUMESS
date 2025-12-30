@@ -87,3 +87,4 @@ D:\PROGRAMACION 3\PERFUMES\PERFUMESS\SistemaBase\SistemaBase\SistemaBase\obj\Deb
 D:\PROGRAMACION 3\PERFUMES\PERFUMESS\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmRegistrarPago.resources
 D:\PROGRAMACION 3\PERFUMES\PERFUMESS\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmCopia.resources
 D:\PROGRAMACION 3\PERFUMES\PERFUMESS\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmCompra.resources
+D:\PROGRAMACION 3\PERFUMES\PERFUMESS\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmListadoStock.resources

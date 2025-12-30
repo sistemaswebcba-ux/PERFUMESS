@@ -99,5 +99,53 @@ namespace SistemaBase.Clases
             cDb.EjecutarNonQueryTransaccion(con, Transaccion, sql);
         }
 
+        public DataTable GetProductos(int SinStock,Int32? CodMarca , string Nombre)
+        {
+            string a = "0";
+            string b = "0";
+            string rdo = "";
+            if (SinStock ==1)
+            {
+                a = "1";
+            }
+            if (CodMarca !=null)
+            {
+                b = "1";
+            }
+            rdo = a + b;
+            string sql = "select p.CodProducto ,p.Nombre, ";
+            sql = sql + " (select m.Nombre from marca m where m.CodMarca=p.CodMarca) as Marca ,";
+            sql = sql + " p.Costo, p.Precio, p.stock ";
+            sql = sql + " from Producto p ";
+            switch(rdo)
+            {
+                case "10":
+                    sql = sql + " where p.stock < 1 ";
+                    break;
+                case "01":
+                    sql = sql + " where p.CodMarca = " + CodMarca.ToString();
+                    break;
+                case "11":
+                    sql = sql + " where p.stock < 1 "; 
+                    sql = sql + " and p.CodMarca = " + CodMarca.ToString();
+                    break;                   
+            }
+
+            if (Nombre !="")
+            {
+                if (rdo =="00")
+                {
+                    sql = sql + " where p.Nombre like " + "'%" + Nombre + "%'";
+                }
+                else
+                {
+                    sql = sql + " and p.Nombre like " + "'%" + Nombre + "%'";
+                }
+            }
+
+            sql = sql + " order by p.Nombre ";
+            return cDb.GetDatatable(sql);
+        }
+
     }
 }

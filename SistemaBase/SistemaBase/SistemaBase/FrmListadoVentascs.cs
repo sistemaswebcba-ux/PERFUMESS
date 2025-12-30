@@ -24,6 +24,13 @@ namespace SistemaBase
             Buscar();
         }
 
+        private void InicializarFechas()
+        {
+            DateTime Hoy = DateTime.Now;
+            daFechaHasta.Value = Hoy;
+            daFechaDesde.Value = (Hoy.AddMonths(-1));
+        }
+
         private void Buscar()
         {
             Double Total = 0;
@@ -54,6 +61,7 @@ namespace SistemaBase
 
         private void FrmListadoVentascs_Load(object sender, EventArgs e)
         {
+            InicializarFechas();
             CargarUsuario();
             Buscar();
 

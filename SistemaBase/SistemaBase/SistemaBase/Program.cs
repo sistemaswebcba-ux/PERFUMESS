@@ -16,7 +16,7 @@ namespace SistemaBase
         {      
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //  Application.Run(new FrmCompra());
+            //  Application.Run(new FrmListadoStock());
             Application.Run(new FrmLogin());
         }
     }
