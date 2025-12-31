@@ -62,7 +62,7 @@ namespace SistemaBase
                     txtCantidad.Text = "1";
                     txtCantidad.Focus();
                     PuedeAgregarCodigoBarra = true;
-                    PuedeAgregarCodigoBarra2 = true;
+                    PuedeAgregarCodigoBarra2 = false;
                 }
             }
         }

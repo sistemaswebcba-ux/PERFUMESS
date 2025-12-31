@@ -22,5 +22,17 @@ namespace SistemaBase.Clases
             sql = sql + ")";
             cDb.EjecutarNonQueryTransaccion(con, Transaccion, sql);
         }
+
+        public DataTable GetDetalle(Int32 CodCompra)
+        {
+            string sql = "";
+            sql = "select p.CodProducto, p.Nombre ,";
+            sql = sql + " d.cantidad,d.costo,d.precio, d.SubTotal ";
+            sql = sql + " from detallecompra d, producto p ";
+            sql = sql + " where d.CodProducto = p.CodProducto ";
+            sql = sql + " and d.CodCompra =" + CodCompra.ToString();
+            return cDb.GetDatatable(sql);
+        }
+
     }
 }

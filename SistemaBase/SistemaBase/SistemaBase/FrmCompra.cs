@@ -62,14 +62,13 @@ namespace SistemaBase
                     txtCantidad.Text = "1";
                     txtCantidad.Focus();
                     PuedeAgregarCodigoBarra = true;
-                    PuedeAgregarCodigoBarra2 = true;
+                    PuedeAgregarCodigoBarra2 = false;
                 }
             }
         }
 
         private void FrmCompra_Load(object sender, EventArgs e)
-        {
-            
+        {        
             Inicialiar();
             fun.EstiloBotones(btnGrabar);
             fun.EstiloBotones(btnCancelar);
@@ -79,6 +78,46 @@ namespace SistemaBase
             BuscarUsuario();
             fun.LlenarCombo(cmbMarca, "Marca", "Nombre", "CodMarca");
             CargarNumeroCompra();
+            if (Principal.CodCompra !=0)
+            {
+                btnGrabar.Enabled = false;
+                btnCancelar.Enabled = true;
+                BuscarComrpa(Principal.CodCompra);
+            }
+        }
+
+        private void BuscarComrpa(Int32 CodCompra)
+        {
+            tbDetalle.Rows.Clear();
+            cFunciones fun = new cFunciones();
+            cCompra compra = new Clases.cCompra();
+            cDetalleCompra detalle = new cDetalleCompra();
+            DataTable trdo = compra.GetCompraxCodigo(CodCompra);
+            DataTable tbDet = detalle.GetDetalle(CodCompra);
+            if (trdo.Rows.Count >0)
+            {
+                txtTotal.Text = trdo.Rows[0]["Total"].ToString();
+                txtTotal.Text = fun.SepararDecimales(txtTotal.Text);
+            }
+
+            if (tbDet.Rows.Count >0)
+            {
+                string CodProducto = tbDet.Rows[0]["CodProducto"].ToString();
+                string Nombre = tbDet.Rows[0]["Nombre"].ToString();
+                string Cantidad = tbDet.Rows[0]["Cantidad"].ToString();
+                string Costo = tbDet.Rows[0]["Costo"].ToString();
+                string Precio = tbDet.Rows[0]["Precio"].ToString();
+                string SubTotal = tbDet.Rows[0]["Subtotal"].ToString();
+                string val = CodProducto + ";" + Nombre;
+                val = val + ";" + Cantidad + ";" + Costo + ";" + Precio;
+                val = val + ";" + fun.SepararDecimales(SubTotal.ToString());
+                tbDetalle = fun.AgregarFilas(tbDetalle, val);
+                tbDetalle = fun.TablaaMiles(tbDetalle, "Costo");
+                tbDetalle = fun.TablaaMiles(tbDetalle, "Precio");
+                Grilla.DataSource = tbDetalle;
+                fun.AnchoColumnas(Grilla, "0;40;15;15;15;15");
+            }
+
         }
 
         private void CargarNumeroCompra()
@@ -295,9 +334,8 @@ namespace SistemaBase
                 Costo = fun.ToDouble(tbDetalle.Rows[i]["Costo"].ToString());
                 Precio = fun.ToDouble(tbDetalle.Rows[i]["Precio"].ToString());
                 Subtotal = fun.ToDouble(tbDetalle.Rows[i]["Subtotal"].ToString());
-                Cantidad = Cantidad * (-1);
                 detalle.InsertarDetalle(con, tran, CodVenta, CodProducto, Cantidad, Precio, Subtotal, Costo);
-                prod.ActualizarStockTransaccion(con, tran, CodProducto, Cantidad);
+                prod.ActualizarStockTransaccion(con, tran, CodProducto,((-1) * Cantidad));
                 prod.ActualizarPrecioTransaccion(con, tran, CodProducto, Precio,Costo);
             }
         }

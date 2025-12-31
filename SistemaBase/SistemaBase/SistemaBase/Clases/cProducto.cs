@@ -85,7 +85,7 @@ namespace SistemaBase.Clases
             string sql = "";
             sql = "update Producto ";
             sql = sql + " set Precio = " + Precio.ToString().Replace(",", ".");
-            sql = sql + ", Costo =" + "'" + Costo.ToString().Replace(",", ".");
+            sql = sql + ", Costo =" + Costo.ToString().Replace(",", ".");
             sql = sql + " where CodProducto =" + CodProducto.ToString();
             cDb.EjecutarNonQueryTransaccion(con, Transaccion, sql);
         }

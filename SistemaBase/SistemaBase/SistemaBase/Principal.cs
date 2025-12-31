@@ -12,7 +12,6 @@ namespace SistemaBase
 {
     public partial class Principal : Form
     {
-        private int childFormNumber = 0;
         //nombre del campo descripcion
         public static string CampoNombreSecundario;
         //nombre de la tabla donde se realiza el grabado
@@ -29,6 +28,7 @@ namespace SistemaBase
         public static Int32 CodProoducto;
         public static Int32 CodCliente;
         public static Int32 CodVenta;
+        public static Int32 CodCompra;
         public Principal()
         {
             InitializeComponent();
@@ -185,6 +185,7 @@ namespace SistemaBase
 
         private void registrarToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Principal.CodCompra = 0;
             FrmCompra frm = new SistemaBase.FrmCompra();
             frm.Show();
         }
@@ -192,6 +193,12 @@ namespace SistemaBase
         private void productosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmListadoStock frm = new FrmListadoStock();
+            frm.Show();
+        }
+
+        private void consultarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmConsultaCompra frm = new SistemaBase.FrmConsultaCompra();
             frm.Show();
         }
     }

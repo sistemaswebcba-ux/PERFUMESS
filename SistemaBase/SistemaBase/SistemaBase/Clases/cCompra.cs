@@ -37,5 +37,26 @@ namespace SistemaBase.Clases
             sql = sql + ")";
             return cDb.EjecutarEscalarTransaccion(con, Transaccion, sql);
         }
+
+        public DataTable GetComprassxFecha(DateTime FechaDesde, DateTime FechaHasta)
+        {
+            string sql = "select c.CodCompra, c.Fecha,";
+            sql = sql + "(select nombre from usuario where codusuario = c.CodUsuario) as Usuario ";
+            sql = sql + ", c.Total  ";
+            sql = sql + " from Compra c ";
+            sql = sql + " where c.Fecha >=" + "'" + FechaDesde.ToShortDateString() + "'";
+            sql = sql + " and c.Fecha <=" + "'" + FechaHasta.ToShortDateString() + "'";
+            sql = sql + " order by c.CodCompra desc ";
+            return cDb.GetDatatable(sql);
+        }
+
+        public DataTable GetCompraxCodigo(Int32 CodCompra)
+        {
+            string sql = "select * from compra c ";
+            sql = sql + " inner join Usuario u on c.CodUsuario =u.CodUsuario ";
+            sql = sql + " where CodCompra =" + CodCompra.ToString();
+            DataTable trdo = cDb.GetDatatable(sql);
+            return trdo;
+        }
     }
 }

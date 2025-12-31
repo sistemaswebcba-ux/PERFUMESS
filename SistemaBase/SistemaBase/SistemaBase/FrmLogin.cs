@@ -68,5 +68,20 @@ namespace SistemaBase
                 Login();
             }
         }
+
+        private void txtUsuario_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                if (txtUsuario.Text =="")
+                {
+                    MessageBox.Show("Debe ingresar un usuario");
+                }
+                else
+                {
+                    txtContraseña.Focus();
+                }
+            }
+        }
     }
 }
