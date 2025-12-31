@@ -90,7 +90,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(564, 259);
+            this.groupBox1.Size = new System.Drawing.Size(540, 259);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Información del producto";
@@ -304,9 +304,8 @@
             // txtCodigoBarra
             // 
             this.txtCodigoBarra.Location = new System.Drawing.Point(130, 35);
-            this.txtCodigoBarra.Multiline = true;
             this.txtCodigoBarra.Name = "txtCodigoBarra";
-            this.txtCodigoBarra.Size = new System.Drawing.Size(354, 20);
+            this.txtCodigoBarra.Size = new System.Drawing.Size(354, 23);
             this.txtCodigoBarra.TabIndex = 1;
             this.txtCodigoBarra.TextChanged += new System.EventHandler(this.txtCodigoBarra_TextChanged);
             // 
@@ -331,7 +330,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(609, 416);
+            this.ClientSize = new System.Drawing.Size(561, 290);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmActualizarStock";
             this.Text = "Formulario para actualizar stock";

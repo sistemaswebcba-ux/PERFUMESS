@@ -284,7 +284,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(617, 376);
+            this.label14.Location = new System.Drawing.Point(583, 376);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(40, 17);
             this.label14.TabIndex = 95;
@@ -293,9 +293,9 @@
             // txtTotal
             // 
             this.txtTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotal.Location = new System.Drawing.Point(663, 376);
+            this.txtTotal.Location = new System.Drawing.Point(630, 376);
             this.txtTotal.Name = "txtTotal";
-            this.txtTotal.Size = new System.Drawing.Size(69, 26);
+            this.txtTotal.Size = new System.Drawing.Size(102, 26);
             this.txtTotal.TabIndex = 94;
             // 
             // btnEliminar

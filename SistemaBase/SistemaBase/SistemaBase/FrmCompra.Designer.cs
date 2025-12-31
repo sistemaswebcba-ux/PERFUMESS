@@ -29,16 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCompra));
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.lBlNumeroVenta = new System.Windows.Forms.Label();
-            this.daFecha = new System.Windows.Forms.DateTimePicker();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblUsuario = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.txtSaldo = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.txtEbtrega = new System.Windows.Forms.TextBox();
             this.cmbMarca = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.txtCosto = new System.Windows.Forms.TextBox();
@@ -65,67 +56,18 @@
             this.txtStock = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.groupBox2.SuspendLayout();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lBlNumeroVenta = new System.Windows.Forms.Label();
+            this.daFecha = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblUsuario = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Grilla)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.lBlNumeroVenta);
-            this.groupBox2.Controls.Add(this.daFecha);
-            this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Controls.Add(this.lblUsuario);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(12, 12);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(751, 63);
-            this.groupBox2.TabIndex = 22;
-            this.groupBox2.TabStop = false;
-            // 
-            // lBlNumeroVenta
-            // 
-            this.lBlNumeroVenta.AutoSize = true;
-            this.lBlNumeroVenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lBlNumeroVenta.Location = new System.Drawing.Point(281, 28);
-            this.lBlNumeroVenta.Name = "lBlNumeroVenta";
-            this.lBlNumeroVenta.Size = new System.Drawing.Size(64, 17);
-            this.lBlNumeroVenta.TabIndex = 113;
-            this.lBlNumeroVenta.Text = "Usuario";
-            // 
-            // daFecha
-            // 
-            this.daFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.daFecha.Location = new System.Drawing.Point(630, 28);
-            this.daFecha.Name = "daFecha";
-            this.daFecha.Size = new System.Drawing.Size(108, 23);
-            this.daFecha.TabIndex = 112;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(576, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 17);
-            this.label1.TabIndex = 111;
-            this.label1.Text = "Fecha";
-            // 
-            // lblUsuario
-            // 
-            this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Location = new System.Drawing.Point(5, 28);
-            this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(64, 17);
-            this.lblUsuario.TabIndex = 25;
-            this.lblUsuario.Text = "Usuario";
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label15);
-            this.groupBox1.Controls.Add(this.txtSaldo);
-            this.groupBox1.Controls.Add(this.label12);
-            this.groupBox1.Controls.Add(this.txtEbtrega);
             this.groupBox1.Controls.Add(this.cmbMarca);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.txtCosto);
@@ -159,41 +101,6 @@
             this.groupBox1.TabIndex = 23;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Información del artículo";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(144, 382);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(44, 17);
-            this.label15.TabIndex = 128;
-            this.label15.Text = "Saldo";
-            // 
-            // txtSaldo
-            // 
-            this.txtSaldo.Enabled = false;
-            this.txtSaldo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSaldo.Location = new System.Drawing.Point(194, 376);
-            this.txtSaldo.Name = "txtSaldo";
-            this.txtSaldo.Size = new System.Drawing.Size(69, 26);
-            this.txtSaldo.TabIndex = 127;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(5, 376);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(58, 17);
-            this.label12.TabIndex = 126;
-            this.label12.Text = "Entrega";
-            // 
-            // txtEbtrega
-            // 
-            this.txtEbtrega.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEbtrega.Location = new System.Drawing.Point(69, 376);
-            this.txtEbtrega.Name = "txtEbtrega";
-            this.txtEbtrega.Size = new System.Drawing.Size(69, 26);
-            this.txtEbtrega.TabIndex = 125;
             // 
             // cmbMarca
             // 
@@ -238,6 +145,7 @@
             this.btnAnular.TabIndex = 120;
             this.btnAnular.Text = "Anular";
             this.btnAnular.UseVisualStyleBackColor = true;
+            this.btnAnular.Click += new System.EventHandler(this.btnAnular_Click);
             // 
             // btnCancelar
             // 
@@ -247,6 +155,7 @@
             this.btnCancelar.TabIndex = 112;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnGrabar
             // 
@@ -316,7 +225,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(617, 376);
+            this.label14.Location = new System.Drawing.Point(584, 376);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(40, 17);
             this.label14.TabIndex = 95;
@@ -325,9 +234,9 @@
             // txtTotal
             // 
             this.txtTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotal.Location = new System.Drawing.Point(663, 376);
+            this.txtTotal.Location = new System.Drawing.Point(631, 376);
             this.txtTotal.Name = "txtTotal";
-            this.txtTotal.Size = new System.Drawing.Size(69, 26);
+            this.txtTotal.Size = new System.Drawing.Size(101, 26);
             this.txtTotal.TabIndex = 94;
             // 
             // btnEliminar
@@ -424,6 +333,56 @@
             this.label10.TabIndex = 3;
             this.label10.Text = "Descripción";
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.lBlNumeroVenta);
+            this.groupBox2.Controls.Add(this.daFecha);
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Controls.Add(this.lblUsuario);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(12, 12);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(751, 63);
+            this.groupBox2.TabIndex = 22;
+            this.groupBox2.TabStop = false;
+            // 
+            // lBlNumeroVenta
+            // 
+            this.lBlNumeroVenta.AutoSize = true;
+            this.lBlNumeroVenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lBlNumeroVenta.Location = new System.Drawing.Point(281, 28);
+            this.lBlNumeroVenta.Name = "lBlNumeroVenta";
+            this.lBlNumeroVenta.Size = new System.Drawing.Size(64, 17);
+            this.lBlNumeroVenta.TabIndex = 113;
+            this.lBlNumeroVenta.Text = "Usuario";
+            // 
+            // daFecha
+            // 
+            this.daFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.daFecha.Location = new System.Drawing.Point(630, 28);
+            this.daFecha.Name = "daFecha";
+            this.daFecha.Size = new System.Drawing.Size(108, 23);
+            this.daFecha.TabIndex = 112;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(576, 28);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(47, 17);
+            this.label1.TabIndex = 111;
+            this.label1.Text = "Fecha";
+            // 
+            // lblUsuario
+            // 
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.Location = new System.Drawing.Point(5, 28);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(64, 17);
+            this.lblUsuario.TabIndex = 25;
+            this.lblUsuario.Text = "Usuario";
+            // 
             // FrmCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -432,13 +391,13 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Name = "FrmCompra";
-            this.Text = "FrmCompra";
+            this.Text = "Formulario de Compra";
             this.Load += new System.EventHandler(this.FrmCompra_Load);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Grilla)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -451,10 +410,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox txtSaldo;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox txtEbtrega;
         private System.Windows.Forms.ComboBox cmbMarca;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtCosto;

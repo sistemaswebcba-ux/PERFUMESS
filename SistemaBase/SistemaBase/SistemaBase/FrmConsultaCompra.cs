@@ -66,7 +66,13 @@ namespace SistemaBase
             Int32 CodCompra = Convert.ToInt32(Grilla.CurrentRow.Cells[0].Value);
             Principal.CodCompra = CodCompra;
             FrmCompra frm = new SistemaBase.FrmCompra();
+            frm.FormClosing += new FormClosingEventHandler(form_FormClosing);
             frm.ShowDialog();
+        }
+
+        private void form_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Buscar();
         }
     }
 }

@@ -143,6 +143,10 @@ namespace SistemaBase
             txtNuevoStock.Text = "";
             txtCodigo.Text = "";
             txtCodigoBarra.Focus ();
+            txtCostoActual.Text = "";
+            txtNuevoCosto.Text = "";
+            if (cmbMarca.SelectedIndex > 0)
+                cmbMarca.SelectedIndex = 0;
         }
 
         private void btnAbrirArchivo_Click(object sender, EventArgs e)

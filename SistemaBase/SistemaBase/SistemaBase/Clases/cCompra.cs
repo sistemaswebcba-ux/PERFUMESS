@@ -58,5 +58,12 @@ namespace SistemaBase.Clases
             DataTable trdo = cDb.GetDatatable(sql);
             return trdo;
         }
+
+        public void Anular(SqlConnection con, SqlTransaction Transaccion, Int32 CodCompra)
+        {
+            string sql = "delete from Compra ";
+            sql = sql + " where CodCompra =" + CodCompra.ToString();
+            cDb.EjecutarNonQueryTransaccion(con, Transaccion, sql);
+        }
     }
 }

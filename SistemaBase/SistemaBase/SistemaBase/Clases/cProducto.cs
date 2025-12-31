@@ -73,9 +73,20 @@ namespace SistemaBase.Clases
 
         public void ActualizarStockTransaccion(SqlConnection con, SqlTransaction Transaccion, int CodProducto, int Cantidad)
         {
+            //RESTA 
             string sql = "";
             sql = "update Producto ";
             sql = sql + " set Stock = isnull(stock,0) - " + Cantidad.ToString();
+            sql = sql + " where CodProducto =" + CodProducto.ToString();
+            cDb.EjecutarNonQueryTransaccion(con, Transaccion, sql);
+        }
+
+        public void ActualizarSumaStockTransaccion(SqlConnection con, SqlTransaction Transaccion, int CodProducto, int Cantidad)
+        {
+            //RESTA 
+            string sql = "";
+            sql = "update Producto ";
+            sql = sql + " set Stock = isnull(stock,0) + " + Cantidad.ToString();
             sql = sql + " where CodProducto =" + CodProducto.ToString();
             cDb.EjecutarNonQueryTransaccion(con, Transaccion, sql);
         }

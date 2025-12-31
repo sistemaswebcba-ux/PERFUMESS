@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using SistemaBase.Clases;
 using System.Data.SqlClient;
 
+
 namespace SistemaBase
 {
     public partial class FrmCompra : FormBase
@@ -84,6 +85,10 @@ namespace SistemaBase
                 btnCancelar.Enabled = true;
                 BuscarComrpa(Principal.CodCompra);
             }
+            else
+            {
+                btnAnular.Enabled = false;
+            }
         }
 
         private void BuscarComrpa(Int32 CodCompra)
@@ -94,6 +99,13 @@ namespace SistemaBase
             cDetalleCompra detalle = new cDetalleCompra();
             DataTable trdo = compra.GetCompraxCodigo(CodCompra);
             DataTable tbDet = detalle.GetDetalle(CodCompra);
+            string CodProducto = "";
+            string Nombre = "";
+            string Cantidad = "";
+            string Costo = "";
+            string Precio = "";
+            string SubTotal = "";
+            string val = "";
             if (trdo.Rows.Count >0)
             {
                 txtTotal.Text = trdo.Rows[0]["Total"].ToString();
@@ -102,16 +114,20 @@ namespace SistemaBase
 
             if (tbDet.Rows.Count >0)
             {
-                string CodProducto = tbDet.Rows[0]["CodProducto"].ToString();
-                string Nombre = tbDet.Rows[0]["Nombre"].ToString();
-                string Cantidad = tbDet.Rows[0]["Cantidad"].ToString();
-                string Costo = tbDet.Rows[0]["Costo"].ToString();
-                string Precio = tbDet.Rows[0]["Precio"].ToString();
-                string SubTotal = tbDet.Rows[0]["Subtotal"].ToString();
-                string val = CodProducto + ";" + Nombre;
-                val = val + ";" + Cantidad + ";" + Costo + ";" + Precio;
-                val = val + ";" + fun.SepararDecimales(SubTotal.ToString());
-                tbDetalle = fun.AgregarFilas(tbDetalle, val);
+                for (int i = 0; i < tbDet.Rows.Count; i++)
+                {
+                    CodProducto = tbDet.Rows[i]["CodProducto"].ToString();
+                    Nombre = tbDet.Rows[i]["Nombre"].ToString();
+                    Cantidad = tbDet.Rows[i]["Cantidad"].ToString();
+                    Costo = tbDet.Rows[i]["Costo"].ToString();
+                    Precio = tbDet.Rows[i]["Precio"].ToString();
+                    SubTotal = tbDet.Rows[i]["Subtotal"].ToString();
+                    val = CodProducto + ";" + Nombre;
+                    val = val + ";" + Cantidad + ";" + Costo + ";" + Precio;
+                    val = val + ";" + fun.SepararDecimales(SubTotal.ToString());
+                    tbDetalle = fun.AgregarFilas(tbDetalle, val);
+                }
+                        
                 tbDetalle = fun.TablaaMiles(tbDetalle, "Costo");
                 tbDetalle = fun.TablaaMiles(tbDetalle, "Precio");
                 Grilla.DataSource = tbDetalle;
@@ -408,6 +424,71 @@ namespace SistemaBase
             }
             if (b == 1)
                 txtCantidad.Focus();
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            if (Principal.CodCompra ==0)
+            {
+                tbDetalle.Rows.Clear();
+                txtTotal.Text = "";
+            }
+            else
+            {
+                this.Close();
+            }
+        }
+
+        private void btnAnular_Click(object sender, EventArgs e)
+        {
+            cFunciones fun = new Clases.cFunciones();
+            string msj = "Confirma anular la compra ";
+            var result = MessageBox.Show(msj, "Información",
+                                 MessageBoxButtons.YesNo,
+                                 MessageBoxIcon.Question);
+
+            // If the no button was pressed ...
+            if (result == DialogResult.No)
+            {
+                return;
+            }
+
+            AnularCompra(Principal.CodCompra);
+        }
+
+        private void AnularCompra(Int32 CodCompra)
+        {
+            SqlTransaction Transaccion;
+            SqlConnection con = new SqlConnection(cConexion.GetConexion());
+            int CodProducto = 0;
+            int Cantidad = 0;
+            cCompra compra = new cCompra();
+            cDetalleCompra det = new cDetalleCompra();
+            cProducto Prod = new cProducto();
+            DataTable Detalle = det.GetDetalle(CodCompra);
+            con.Open();
+            Transaccion = con.BeginTransaction();
+            try
+            {
+                for (int i = 0; i < Detalle.Rows.Count; i++)
+                {
+                    CodProducto = Convert.ToInt32(Detalle.Rows[i]["CodProducto"].ToString());
+                    Cantidad = Convert.ToInt32(Detalle.Rows[i]["Cantidad"].ToString());
+                    Prod.ActualizarStockTransaccion (con, Transaccion, CodProducto, Cantidad);
+                }
+                det.Anular(con, Transaccion, CodCompra);
+                compra.Anular(con, Transaccion, CodCompra);
+                Transaccion.Commit();
+                con.Close();
+                Mensaje("Compra anulada correctamente");
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                Mensaje("hubo un error ");
+                Mensaje(ex.Message.ToString());
+            }
+          
         }
     }
 }
